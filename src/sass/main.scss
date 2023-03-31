@@ -4,4 +4,35 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+@import './variables';
 @import './partials/header';
+@import './partials/hero';
+@import './partials/about';
+@import './partials/delivery';
+@import './partials/store';
+@import './partials/blog';
+@import './partials/footer';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  font-family: 'Inter', sans-serif;
+}
+.container {
+  @include tablet-down {
+    margin: 0 16px;
+  }
+  @include tablet-up {
+    margin: 0 24px;
+  }
+}
