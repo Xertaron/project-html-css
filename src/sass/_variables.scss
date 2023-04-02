@@ -15,7 +15,12 @@ $small: 14px;
 $medium: 18px;
 $large: 24px;
 
-//Mixiny
+//Przejścia
+$transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+//Mixiny//
+
+//Media Query
 
 @mixin phone {
   @media screen and (min-width: 480px) {
@@ -52,6 +57,9 @@ $large: 24px;
     @content;
   }
 }
+
+//Przyciski
+
 @mixin button-l {
   width: 280px;
   height: 64px;
