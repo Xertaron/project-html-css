@@ -48,12 +48,12 @@ $transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   }
 }
 @mixin tablet-only {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     @content;
   }
 }
 @mixin desktop {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     @content;
   }
 }
