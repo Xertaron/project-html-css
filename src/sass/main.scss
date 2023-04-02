@@ -36,3 +36,10 @@ footer {
     margin: 100 24px;
   }
 }
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+  color: $hover;
+  transition: $transition;
+}
