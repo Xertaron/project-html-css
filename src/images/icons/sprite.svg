@@ -9,7 +9,7 @@
 <symbol id="icon-burger" viewBox="0 0 32 32"><path d="M4 5.333h24V8H4V5.333zm8 9.334h16v2.667H12v-2.667zM4 24h24v2.667H4V24z"/></symbol></defs></svg>
 
 <!--Menu mobilne-->
-<symbol id="icon-close-btn" viewBox="0 0 32 32"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M24 8 8 24M8 8l16 16"/></symbol>
+<symbol id="icon-close-btn" viewBox="0 0 32 32"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M24 8 8 24M8 8l16 16"/></symbol>
 
 <!--Hero-->
 
