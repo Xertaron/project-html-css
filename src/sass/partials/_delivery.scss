@@ -1,3 +1,39 @@
+.delivery {
+    width: 320px;
+    height: 457px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.delivery__header {
+    font-weight: 700;
+    font-size: 24px 
+    Line-height: 29px 
+}
+
 .delivery-list {
-list-style: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.delivery__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.delivery__step {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+
+    height: 40px;
+    width: 40px;
+    border: solid;
+    border-color: #000000;
+    border-radius: 50%;
+    padding-right: 8px;
 }
