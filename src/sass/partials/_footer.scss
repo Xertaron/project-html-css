@@ -1,0 +1,71 @@
+.footer__background {
+  background-color: $black;
+}
+.footer__logo {
+  fill: $white;
+}
+.footer__nav-tittle {
+  font-family: Inter;
+  font-size: $medium;
+  font-weight: 700;
+  color: $white;
+  line-height: 1.21;
+}
+.footer__nav-item {
+  font-family: Inter;
+  font-size: $small;
+  font-weight: 500;
+  color: $white;
+  line-height: 1.2;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $hover;
+  }
+}
+.footer__open-times-title {
+  font-family: Inter;
+  font-size: $medium;
+  font-weight: 700;
+  color: $white;
+  line-height: 1.21;
+}
+.footer__open-times-item {
+  font-family: Inter;
+  font-size: $small;
+  font-weight: 500;
+  color: $white;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: default;
+  &:hover,
+  &:focus {
+    color: $hover;
+  }
+}
+.footer__contact-title {
+  font-family: Inter;
+  font-size: $medium;
+  font-weight: 700;
+  color: $white;
+  line-height: 1.21;
+}
+.footer__contact-item {
+  font-family: Inter;
+  font-size: $small;
+  font-weight: 500;
+  color: $white;
+  line-height: 1.2;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $hover;
+  }
+}
+.footer__social-item {
+  fill: $white;
+  &:hover,
+  &:focus {
+    fill: $hover;
+  }
+}
