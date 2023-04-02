@@ -8,21 +8,21 @@
 
 .delivery__header {
     font-weight: 700;
-    font-size: 24px 
-    Line-height: 29px 
+    font-size: 24px; 
+    Line-height: 29px;
 }
 
 .delivery-list {
     list-style: none;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    // flex-wrap: nowrap;
 }
 
 .delivery__item {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    // flex-wrap: nowrap;
 }
 
 .delivery__step {
