@@ -1,0 +1,48 @@
+<body>
+  <section class="blog">
+    <div>
+      <h2 class="blog__header">BLOG</h2>
+      <ul class="blog__posts">
+        <li class="blog__items">
+          <img
+            src="/src/images/blog/flowers_image1.jpg"
+            width="390"
+            height="421"
+            alt="Leaves of eucalyptus"
+          />
+        </li>
+        <li class="blog__items">
+          <img
+            src="/src/images/blog/flowers_image2.jpg"
+            width="390"
+            height="421"
+            alt="Flower of zantedeschia"
+          />
+        </li>
+        <li class="blog__items">
+          <img
+            src="/src/images/blog/flowers_image3.jpg"
+            width="390"
+            height="421"
+            alt="Flower of iris"
+          />
+        </li>
+      </ul>
+    </div>
+    <div>
+        <p class="newsletter__text">Follow to our newsletter</p>
+         <button class="newsletter__button" type="button" data-modal-open>Subscribe</button>
+          <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button type="button" class="modal__button" data-modal-close><img src="/src/images/blog/blog_cross.jpg" width="24" height="24"></button>
+            <form class="modal__form">
+              <p class="modal__title">Follow to our newsletter</p>
+              <p class="modal__text">Be the first to get exclusive offers and the latest news on our product directly in your box.</p>
+              <div class="fieldset">
+                <label for="mail" class="fieldset__label">Email</label>
+                <input required class="fieldset__input-mail" type="text" name="mail" id="mail">
+              </div>
+        </div>
+    </div>
+  </section>
+</body>
