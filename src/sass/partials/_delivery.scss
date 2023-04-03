@@ -1,29 +1,39 @@
 .delivery {
-    width: 320px;
-    height: 457px;
     display: flex;
     flex-direction: column;
-    // flex-wrap: nowrap;
-}
-.line {
-    display: table-cell;
-    width: 100%;
-    padding-left: 14px;
-    border: none;
-}
 
-.line:after {
-    content: '';
-    border-top: 1px solid #000000;
-    width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-}
+    &__header {
+        content: '';
+        display: table;
+        width: 100%;
+        margin: 0;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.21;
+    }
 
-.delivery__header {
-    font-weight: 700;
-    font-size: 24px; 
-    line-height:  1.2;
+    .line {
+        display: table-cell;
+        width: 100%;
+        padding-left: 14px;
+        border: none;
+    }
+
+    .line:after {
+        content: '';
+        border-top: 1px solid $black;
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 1.25;
+        color: $black;
+        padding-top: 32px;
+        padding-bottom: 16px;
+    }
 }
 
 .delivery-list {
