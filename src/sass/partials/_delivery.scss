@@ -30,7 +30,7 @@
     &__description {
         font-size: 32px;
         line-height: 1.25;
-        font-weight: 400;
+        // font-weight: 400;
         color: $black;
         vertical-align: middle;
         margin-left: 56px;
@@ -49,12 +49,15 @@
 .delivery__item {
     display: flex;
     flex-direction: row;
+    padding-left: 0px;
+    padding-top: 11px;
+    padding-bottom: 9px;
     // flex-wrap: nowrap;
 }
 
 .delivery__step {
     font-size: 26px;
-    font-weight: 400;
+    // font-weight: 400;
     line-height: 1.2;
     text-align: center;
     vertical-align: middle;
@@ -64,5 +67,7 @@
     border: 1px solid;
     border-color: $black;
     border-radius: 50%;
-    margin-right: 8px;
+    margin-right: 58px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
