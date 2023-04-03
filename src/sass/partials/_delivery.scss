@@ -3,7 +3,21 @@
     height: 457px;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    // flex-wrap: nowrap;
+}
+.line {
+    display: table-cell;
+    width: 100%;
+    padding-left: 14px;
+    border: none;
+}
+
+.line:after {
+    content: '';
+    border-top: 1px solid #000000;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .delivery__header {
@@ -30,11 +44,12 @@
     font-weight: 400;
     line-height: 1.2;
     text-align: center;
+    vertical-align: middle;
 
     height: 40px;
     width: 40px;
     border: solid;
     border-color: $black;
     border-radius: 50%;
-    padding-right: 8px;
+    margin-right: 8px;
 }
