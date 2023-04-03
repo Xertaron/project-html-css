@@ -4,6 +4,7 @@
 }
 .footer__background {
   background-color: $black;
+  width: 100%;
 }
 .footer__box {
   display: flex;
@@ -81,6 +82,7 @@
   font-weight: 500;
   color: $white;
   line-height: 1.2;
+  width: 128px;
   text-decoration: none;
   &:hover,
   &:focus {
@@ -104,5 +106,55 @@
   &:hover,
   &:focus {
     fill: $hover;
+  }
+}
+@include desktop {
+  .footer__background {
+    width: 1280px;
+    height: 298px;
+  }
+  .footer__box {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .logo__box {
+    margin: 72px 210px 169px 24px;
+  }
+  .footer__nav-tittle {
+    margin: 72px 96px 18px 0px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .footer__nav-link {
+    font-size: 16px;
+  }
+  .footer__open-times-title {
+    width: 143px;
+    margin: 72px 96px 18px 0px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .footer__open-times-time {
+    width: 97px;
+    font-size: 16px;
+  }
+  .footer__contact-title {
+    margin: 72px 355px 18px 0px;
+    font-size: 20px;
+  }
+  .footer__contact-item {
+    font-size: 16px;
+  }
+  .footer__contact-long {
+    width: 147px;
+  }
+  .footer__contact-small {
+    width: auto;
+  }
+  .footer__social-list {
+    flex-direction: column;
+    gap: 18px;
+    margin: 72px 48px 152px 0px;
   }
 }
