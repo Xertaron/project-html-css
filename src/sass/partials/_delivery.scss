@@ -30,6 +30,7 @@
     &__description {
         font-size: 32px;
         line-height: 1.25;
+        font-weight: 400;
         color: $black;
         vertical-align: middle;
         // padding-top: 32px;
@@ -51,14 +52,14 @@
 }
 
 .delivery__step {
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 400;
     line-height: 1.2;
     text-align: center;
     vertical-align: middle;
 
-    height: 40px;
-    width: 40px;
+    height: 64px;
+    width: 64px;
     border: solid;
     border-color: $black;
     border-radius: 50%;
