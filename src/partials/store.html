@@ -81,4 +81,55 @@
         </li>
      </ul>  
     </div>
+
+    <form class="store__modal modal">
+
+        <button class="modal__button-s" type="submit">
+            <p class="modal__title">Order flowers</p>
+        </button>
+        <h4 modal__title-contact>Contact us</h4>
+        <p class="modal__txtinfo">
+            If you have any additional questions or you want to clarify something before you make an order please fill in your contact details. We will call you back.
+        </p>
+    
+        <label class="modal__label">
+    
+       <p class="modal__span">Name</p>
+            <input
+              class="modal__input"
+              name="modal-name"
+              type="text"
+              placeholder="Your name"
+              minlength="2" />
+          </label>
+         
+    
+        <p class="modal__span">Email</p>
+          <label class="modal__label">
+            <input
+              class="modal__input"
+              name="modal-email"
+              type="email"
+              placeholder="Your email"
+              minlength="5" />
+          </label>
+       
+    
+          <button class="modal__button-s" type="submit">
+            <p class="modal__title">Send</p>
+        </button>
+    
+        <div class="modal__container js-menu-container">
+          <button type="button" class="modal__close-btn js-close-modal"></button>
+    
+          <div class="backdrop backdrop__is-hidden" data-modal>
+            <div class="modal">
+              <button
+                type="button"
+                class="modal__close-btn"
+                data-modal-close>
+              </button>
+    
+    
+    </form>
 </section>
