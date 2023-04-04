@@ -33,7 +33,17 @@
                 </p>
             </li>
         </ul>
-        <img class="delivery__image" src="/src/images/delivery/image-delivery-mobile 2.jpg" alt="Flowers">
+        <img class="delivery__image" src="/src/images/delivery/image-delivery-mobile.jpg"
+        srcset="
+        /src/images/delivery/image-delivery-desktop.jpg    1280w,
+        /src/images/delivery/image-delivery-tablet.jpg      768w,
+        /src/images/delivery/image-delivery-mobile.jpg      320w,
+        /src/images/delivery/image-delivery-desktop@2x.jpg 2560w,
+        /src/images/delivery/image-delivery-tablet@2x.jpg  1536w,
+        /src/images/delivery/image-delivery-mobile@2x.jpg   640w
+        "
+        sizes="(min-width: 1280px) 1280px, (min-width: 768px) 768px, 320px" 
+        alt="Flowers">
     </section>
 </body>
 
