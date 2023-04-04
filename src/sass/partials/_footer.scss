@@ -1,18 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .footer__background {
   background-color: $black;
+  width: 100%;
+}
+.footer__box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+@media screen and (max-width: 1279px) {
+  .footer__logo {
+    display: none;
+  }
 }
 .footer__logo {
   fill: $white;
 }
-.footer__nav-tittle {
-  font-family: Inter;
+.footer__nav-title {
+  margin-right: 44px;
+  margin-top: 32px;
+  width: 116px;
+  height: 22px;
+
   font-size: $medium;
   font-weight: 700;
   color: $white;
   line-height: 1.21;
 }
 .footer__nav-item {
-  font-family: Inter;
+  margin-top: 12px;
+}
+.footer__nav-link {
   font-size: $small;
   font-weight: 500;
   color: $white;
@@ -24,14 +45,16 @@
   }
 }
 .footer__open-times-title {
-  font-family: Inter;
+  width: 130px;
+  margin-top: 32px;
+  margin-bottom: 18px;
   font-size: $medium;
   font-weight: 700;
   color: $white;
   line-height: 1.21;
 }
-.footer__open-times-item {
-  font-family: Inter;
+.footer__open-times {
+  width: 85px;
   font-size: $small;
   font-weight: 500;
   color: $white;
@@ -44,28 +67,141 @@
   }
 }
 .footer__contact-title {
-  font-family: Inter;
+  width: 81px;
+  margin-top: 32px;
+  margin-right: 87.17px;
   font-size: $medium;
   font-weight: 700;
   color: $white;
   line-height: 1.21;
 }
 .footer__contact-item {
-  font-family: Inter;
   font-size: $small;
   font-weight: 500;
   color: $white;
   line-height: 1.2;
+  width: 128px;
   text-decoration: none;
   &:hover,
   &:focus {
     color: $hover;
   }
 }
+.footer__contact-long {
+  width: 128px;
+  margin-bottom: 12px;
+}
+.footer__contact-small {
+  width: 111px;
+  margin-bottom: 12px;
+}
+.footer__social-list {
+  display: flex;
+  gap: 14px;
+}
 .footer__social-item {
   fill: $white;
   &:hover,
   &:focus {
     fill: $hover;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__box {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+    height: 268px;
+  }
+  .footer__nav-title {
+    margin: 60px 44px 18px 24px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .footer__nav-link {
+    font-size: 16px;
+    margin-left: 24px;
+    margin-bottom: 12px;
+  }
+  .footer__open-times-title {
+    width: 143px;
+    margin: 60px 44px 18px 0px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .footer__open-times {
+    width: 97px;
+    font-size: 16px;
+  }
+  .footer__contact-title {
+    margin: 60px 210px 18px 0px;
+    font-size: 20px;
+  }
+  .footer__contact-item {
+    font-size: 16px;
+  }
+  .footer__contact-long {
+    width: 147px;
+  }
+  .footer__contact-small {
+    width: auto;
+  }
+  .footer__social-list {
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 60px;
+    margin-right: 41px;
+  }
+}
+@include desktop {
+  .footer__background {
+    width: 100%;
+    height: 298px;
+  }
+  .footer__box {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .logo__box {
+    margin: 72px 210px 169px 24px;
+  }
+  .footer__nav-title {
+    margin: 72px 96px 18px 0px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .footer__nav-link {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    font-size: 16px;
+  }
+  .footer__open-times-title {
+    width: 143px;
+    margin: 72px 96px 18px 0px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .footer__open-times {
+    width: 97px;
+    font-size: 16px;
+  }
+  .footer__contact-title {
+    margin: 72px 355px 18px 0px;
+    font-size: 20px;
+  }
+  .footer__contact-item {
+    font-size: 16px;
+  }
+  .footer__contact-long {
+    width: 147px;
+  }
+  .footer__contact-small {
+    width: auto;
+  }
+  .footer__social-list {
+    flex-direction: column;
+    gap: 18px;
+    margin: 72px 48px 152px 0px;
   }
 }
