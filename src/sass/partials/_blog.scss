@@ -13,7 +13,7 @@
       height: 1px;
       width: calc(100% - 14px - 72px); // lenght 100% - space between - width header
       top: 50%;
-      background: get-color(brand_color-second);
+      background: $black;
       right: 0;
       @include mq(tablet) {
         width: calc(100% - 10px - 131px); // lenght 100% - space between - width header
@@ -104,4 +104,18 @@
   }
   @include mq(desktop) {
   }
+}
+
+.line {
+  display: table-cell;
+  width: 100%;
+  padding-left: 14px;
+  border: none;
+}
+.line:after {
+  content: '';
+  border-top: 1px solid #000000;
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
 }
