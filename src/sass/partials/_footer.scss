@@ -12,12 +12,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-<<<<<<< Updated upstream
   width: 389px;
   height: 320px;
-=======
   padding: 32px 14px 32px 16px;
->>>>>>> Stashed changes
 }
 @media screen and (max-width: 1279px) {
   .footer__logo {
@@ -105,12 +102,10 @@
   display: flex;
   gap: 14px;
 }
-<<<<<<< Updated upstream
 .footer__social-icon {
   fill: $white;
-=======
+}
 .footer__social-item {
->>>>>>> Stashed changes
   &:hover,
   &:focus {
     fill: $hover;
