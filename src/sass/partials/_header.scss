@@ -74,21 +74,15 @@
   border: none;
   border-radius: 50%;
   outline: none;
-  
+
   @include tablet-up {
     display: none;
   }
 }
 
-.menu-toggle__close-icon {
+.menu-toggle__close-icon path {
+  stroke: $white;
   fill: $white;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover {
-    fill: $black;
-  }
 }
 
 .menu-container {
@@ -159,6 +153,8 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 1.2;
+  font-family: 'Montserrat';
+
   @include tablet-up {
     margin: 0;
     color: $black;
