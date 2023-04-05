@@ -1,0 +1,169 @@
+// Okno modalne
+.backdrop {
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+
+  transition-delay: 500ms;
+}
+
+.modal {
+  position: absolute;
+  width: calc(100vw - 30px);
+  max-width: 380px;
+  min-height: 511px;
+  top: 50%;
+  left: 50%;
+  padding: 30px;
+  z-index: 1;
+
+  background: $whiteColor;
+  box-shadow: 0px 1px 3px rgba(215, 215, 215, 1), 0px 1px 1px rgba(215, 215, 215, 1),
+    0px 2px 1px rgba(215, 215, 215, 1);
+  border-radius: 8px;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.25);
+  }
+
+  &__close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 50%;
+    padding: 5px;
+    height: 30px;
+    background-color: $whiteColor;
+    border: 1px solid rgba(215, 215, 215, 1);
+    cursor: pointer;
+  }
+
+  &__close-button:hover,
+  &__close-button:focus {
+    background-color: $sendButton;
+    fill: $sendButton;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 1.5;
+    text-decoration-style: bold;
+    font-weight: 400px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__form-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $supportColor;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 4px;
+  }
+
+  &__form-input {
+    border: 1px solid rgba(215, 215, 215, 1);
+    border-radius: 4px;
+    height: 40px;
+    padding-left: 41px;
+  }
+
+  &__form-input:hover,
+  &__form-input:focus {
+    border-color: rgba(215, 215, 215, 1);
+    outline: none;
+  }
+
+  &__form-svg {
+    position: absolute;
+    top: 28px;
+    left: 14px;
+  }
+
+  &__form-item:hover,
+  &__form-item:focus-within {
+    fill: $sendButton;
+  }
+
+  &__button {
+    @extend %button;
+    padding: 10px 76px;
+    margin: 20px auto 0;
+    display: block;
+    fill: $sendButton;
+  }
+
+  &__button:hover {
+    background-color: $sendButton;
+    fill: $sendButton;
+    color: $whiteColor;
+  }
+}
+
+// DESKTOP RESPONSIVE
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+
+    &__title {
+      line-height: 1.15;
+    }
+
+    &__form-regulations {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+
+    &__form-regulations-text {
+      padding-left: 39px;
+    }
+
+    &__form-regulations input[type='checkbox'] {
+      left: 15px;
+    }
+
+    &__form-checkbox-svg {
+      left: 15px;
+    }
+  }
+}
+
+// TABLET & DESKTOP RESPONSIVE
+
+@media screen and (min-width: 473px) {
+  .modal__form-checkbox-svg {
+    top: 50%;
+  }
+  .modal__form-regulations input[type='checkbox'] {
+    top: 50%;
+  }
+}
