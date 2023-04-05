@@ -1,31 +1,33 @@
 //Kolory
-$brand: rgba(232, 111, 84, 1);
-$brand-opaque: rgba(232, 111, 84, 0.4);
+$button: rgba(232, 111, 84, 1);
+$button-invalid: rgba(232, 111, 84, 0.4);
+$hover: rgba(226, 91, 65, 1);
 $black: rgba(0, 0, 0, 1);
 $white: rgba(255, 255, 255, 1);
 $vaild: rgba(60, 188, 129, 1);
 $invalid: rgba(231, 74, 59, 1);
-$hover: rgba(17, 17, 17, 0.7);
 $input: rgba(215, 215, 215, 1);
+$input-hover: rgba(17, 17, 17, 0.7);
+$price: rgba(0, 0, 0, 0.6);
 
 //Czcionki
 $small: 14px;
 $medium: 18px;
 $large: 24px;
 
-//Mixiny
+//Przejścia
+$transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
-@mixin phone {
+//Mixiny//
+
+//Media Query
+
+@mixin mobile-up {
   @media screen and (min-width: 480px) {
     @content;
   }
 }
-@mixin phone-up {
-  @media screen and (min-width: 480px) {
-    @content;
-  }
-}
-@mixin phone-only {
+@mixin mobile-only {
   @media screen and (min-width: 480px) and (max-width: 767px) {
     @content;
   }
@@ -41,15 +43,18 @@ $large: 24px;
   }
 }
 @mixin tablet-only {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     @content;
   }
 }
 @mixin desktop {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     @content;
   }
 }
+
+//Przyciski
+
 @mixin button-l {
   width: 280px;
   height: 64px;

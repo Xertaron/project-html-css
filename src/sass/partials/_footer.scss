@@ -101,7 +101,8 @@
   display: flex;
   gap: 14px;
 }
-.footer__social-icon {
+.footer__social-item {
+  fill: $white;
   &:hover,
   &:focus {
     fill: $hover;
