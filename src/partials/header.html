@@ -1,2 +1,57 @@
 <!--Wstawiłem to tylko na próbę, możesz to usunąć.-->
+<<<<<<< Updated upstream
 <section>HEADER</section>
+=======
+<header class="header">
+  <a href="#">
+    <svg class="header__logo" width="45" height="35">
+      <use href="./images/icons/sprite.svg#icon-logo"></use>
+    </svg>
+  </a>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg class="menu-toggle__close-icon" width="24" height="24">
+        <use href="./images/icons/sprite.svg#icon-close-btn"></use>
+      </svg>
+    </button>
+
+    <!-- <nav class="header__nav"> -->
+    <ul class="mobile-menu">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link js-close-item-1" href="#">Anemone</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link js-close-item-2" href="#">About us</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link js-close-item-3" href="#">Store</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link js-close-item-4" href="#">Delivery</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link js-close-item-5" href="#">Blog</a>
+      </li>
+    </ul>
+    <!-- </nav> -->
+  </div>
+
+  <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="js/mobile-menu.js"></script>
+  <a class="header__phone-link" href="tel:+380631234567">
+    <svg class="header__phone" width="22" height="22">
+      <use href="./images/icons/sprite.svg#icon-phone"></use>
+    </svg>
+  </a>
+  <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+    <svg class="header__burger" width="24" height="24">
+      <use href="./images/icons/sprite.svg#icon-burger"></use>
+    </svg>
+  </button>
+</header>
+>>>>>>> Stashed changes
