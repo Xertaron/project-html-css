@@ -3,7 +3,6 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-
   width: 91px;
   height: 29px;
   left: 0px;
@@ -30,17 +29,10 @@
   align-items: center;
   padding: 16px 32px;
   gap: 10px;
-
   width: 280px;
   height: 64px;
-
-  /* pink */
-
   background: #e86f54;
   border-radius: 38px;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 1;
   flex-grow: 0;
