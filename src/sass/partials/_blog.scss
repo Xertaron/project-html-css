@@ -11,61 +11,31 @@
     line-height: 1.21;
     padding: 0px 16px 32px 16px;
   }
-  @include tablet-up {
-    font-size: 44px;
-    line-height: 54px;
-    margin-bottom: 60px;
-  }
-  @include desktop {
-    margin-bottom: 122px;
-  }
   &__gallery {
-    margin-bottom: 8px;
     text-align: center;
     display: flex;
     justify-content: space-between;
-    @include mobile-only {
-      justify-content: space-around;
-    }
-    @include tablet-up {
-      justify-content: space-between;
-    }
-    @include desktop {
-      margin-bottom: 16px;
-    }
   }
   &__img {
     &:last-child {
       display: none;
     }
-
-    @include desktop {
-      &:last-child {
-        display: block;
-      }
-    }
   }
   &__slider-btns {
     text-align: center;
     margin-bottom: 14px;
-
-    @include tablet-only {
-      //width: 61px;
-      height: 61px;
-      margin-bottom: 18px;
-    }
-    @include desktop {
-      margin-bottom: 24px;
-    }
   }
   &__btn-left {
-    margin-right: 25px;
+    cursor: pointer;
+    margin: 26.5px 14.55px 36.5px 0px;
     @include tablet-up {
       width: 61px;
       height: 61px;
     }
   }
   &__btn-right {
+    margin: 26.5px 0px 36.5px 14.55px;
+    cursor: pointer;
     @include tablet-up {
       width: 61px;
       height: 61px;
@@ -76,7 +46,7 @@
     font-size: 18px;
     line-height: 22px;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 
     @include tablet-up {
       font-size: 32px;
