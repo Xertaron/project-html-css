@@ -15,16 +15,16 @@
       top: 50%;
       background: get-color(brand_color-second);
       right: 0;
-      @include mq(tablet) {
+      @include tablet-up {
         width: calc(100% - 10px - 131px); // lenght 100% - space between - width header
       }
     }
-    @include mq(tablet) {
+    @include tablet-up {
       font-size: 44px;
       line-height: 54px;
       margin-bottom: 60px;
     }
-    @include mq(desktop) {
+    @include desktop {
       margin-bottom: 122px;
     }
   }
@@ -33,13 +33,13 @@
     text-align: center;
     display: flex;
     justify-content: space-between;
-    @include mq(phone) {
+    @include mobile-only {
       justify-content: space-around;
     }
-    @include mq(tablet) {
+    @include tablet-up {
       justify-content: space-between;
     }
-    @include mq(desktop) {
+    @include desktop {
       margin-bottom: 16px;
     }
   }
@@ -48,7 +48,7 @@
       display: none;
     }
 
-    @include mq(desktop) {
+    @include desktop {
       &:last-child {
         display: block;
       }
@@ -58,24 +58,24 @@
     text-align: center;
     margin-bottom: 14px;
 
-    @include mq(tablet) {
+    @include tablet-only {
       //width: 61px;
       height: 61px;
       margin-bottom: 18px;
     }
-    @include mq(desktop) {
+    @include desktop {
       margin-bottom: 24px;
     }
   }
   &__btn-left {
     margin-right: 25px;
-    @include mq(tablet) {
+    @include tablet-up {
       width: 61px;
       height: 61px;
     }
   }
   &__btn-right {
-    @include mq(tablet) {
+    @include tablet-up {
       width: 61px;
       height: 61px;
     }
@@ -87,7 +87,7 @@
     text-align: center;
     margin-bottom: 32px;
 
-    @include mq(tablet) {
+    @include tablet-up {
       font-size: 32px;
       line-height: 39px;
     }
@@ -97,11 +97,5 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
-  }
-  @include mq(phone) {
-  }
-  @include mq(tablet) {
-  }
-  @include mq(desktop) {
   }
 }
