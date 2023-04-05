@@ -81,12 +81,6 @@ img {
   }
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero-background {
-    background-image: url(_../images/hero/hero_mobile@2x.jpg_);
-  }
-}
-
 // MOBILE RESPONSIVE
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -104,11 +98,6 @@ img {
   .hero__title {
     text-align: left;
   }
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .hero-background {
-      background-image: url(_../images/hero/hero_tablet-desktop@2x.jpg_);
-    }
-  }
 }
 
 // DESKTOP RESPONSIVE
@@ -120,11 +109,6 @@ img {
   }
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero-background {
-    background-image: url(_../images/hero/hero_desktop@2x.jpg_);
-  }
-}
 @media screen and (min-width: 1283px) {
   .list {
     flex-wrap: nowrap;
