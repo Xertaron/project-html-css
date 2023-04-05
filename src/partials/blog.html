@@ -48,13 +48,69 @@
   </div>
   <div class="blog__slider-btns">
     <svg class="blog__btn-left" width="50" height="50">
+<<<<<<< Updated upstream
       <use href="./images/icons.svg#icon-arrow-left"></use>
     </svg>
 
     <svg class="blog__btn-right" width="50" height="50">
       <use href="./images/icons.svg#icon-arrow-right"></use>
+=======
+      <use href="./images/icons/sprite.svg#icon-arrow-left"></use>
+    </svg>
+
+    <svg class="blog__btn-right" width="50" height="50">
+      <use href="./images/icons/sprite.svg#icon-arrow-right"></use>
+>>>>>>> Stashed changes
     </svg>
   </div>
   <p class="blog__description">Follow to our newsletter</p>
   <button class="btn blog__btn-sub" type="button" data-modal-open>Subscribe</button>
+<<<<<<< Updated upstream
+=======
+  <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+      <button type="button" class="modal__close-button" data-modal-close>
+        &#x2715;
+      </button>
+      <div class="modal__img">
+        <picture>
+          <source
+            srcset="
+            ./images/blog/modal-subscribe-desktop.jpg 1x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+            ./images/blog/modal-subscribe-tablet.jpg 1x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+            ./images/blog/modal-subscribe-mobile.jpg 1x
+            "
+            media="(min-width:480px)"
+          />
+        <img
+          src="./images/blog/modal-subscribe-desktop.jpg"
+          alt="red flower"
+        />
+      </picture>
+      </div>     
+      <div class="modal__text">
+      <h3>Follow to our newsletter</h3>
+      <p>Be the first  to get exclusive offers and the latest  news on our product directly in your box.</p>
+      <form class="form-modal">
+        <label class="form-modal__label">
+          <span class="form-modal__label-text">Email</span>
+          <div class="form-modal__input">
+          <input type="email" class="form-modal__text" name="email" placeholder="Your email">
+          </div>
+        </label>
+        <button type="submit" class="modal__btn">Subscribe</button>
+      </form>
+    </div>
+  </div>
+>>>>>>> Stashed changes
 </section>
