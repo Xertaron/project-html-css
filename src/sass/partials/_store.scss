@@ -1,12 +1,16 @@
 .store {
     display: flex;
+    flex-direction: column;
 }
 .store__header {
+    content: '';
+    display: table;
+    width: 100%;
     font-weight: 700;
-    font-size: 24px;
+    font-size: $large;
     line-height: 1.2;
     text-align: left;
-    margin-bottom: 32px;
+    margin: 0;
 }
 .line {
     display: table-cell;
@@ -45,4 +49,50 @@
     opacity: 0.6;
     font-weight: 600;
     font-size: 12px;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    margin-top: 32px;
+}
+.modal__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $white;
+    margin: 10px 35px;
+
+}
+.modal__title-contact {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: left;
+
+}
+.modal__txtinfo {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.25;
+    text-align: left;
+    color: rgb(92, 92, 92);
+}
+.modal__label {
+    display: inline-flex;
+    flex-direction: column;
+}
+.modal__span {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.2;
+    color: rgb(92, 92, 92);
+}
+.modal__close-btn {
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid $black;
 }
