@@ -63,10 +63,21 @@
     fill: $black;
     top: 50%;
     right: 10%;
-    transform: translateX (50%, -10%);
+    transform: translateX(50%, -10%);
   }
 }
-
+.section {
+  padding: 60px 0;
+  margin: 0 auto;
+  @include desktop {
+    padding: 94px 0;
+  }
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .hero {
     flex-basis: calc(100% - 60px);
@@ -115,5 +126,10 @@
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: url('../images/hero/hero_desktop@2x.jpg');
+  }
+}
+@media screen and (min-width: 1283px) {
+  .list {
+    flex-wrap: nowrap;
   }
 }
