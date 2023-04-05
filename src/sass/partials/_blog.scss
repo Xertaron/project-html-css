@@ -16,10 +16,8 @@
     display: flex;
     justify-content: space-between;
   }
-  &__img {
-    &:last-child {
-      display: none;
-    }
+  &__box {
+    padding: 0px 16px 0px 16px;
   }
   &__slider-btns {
     text-align: center;
@@ -58,6 +56,11 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .blog__img-desktop {
+    display: none;
   }
 }
 
@@ -280,5 +283,15 @@
   &:focus {
     background-color: $hover;
     color: $white;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .blog {
+    max-width: 1280px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .blog {
+    min-width: 768px;
   }
 }
