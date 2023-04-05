@@ -54,7 +54,7 @@
   }
 
   &__button {
-    @extend %button;
+    @include button;
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 25px;

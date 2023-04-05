@@ -1,5 +1,5 @@
 // Przyciski
-%button {
+@mixin button {
   background-color: transparent;
   box-shadow: transparent;
   border-radius: 4px;
