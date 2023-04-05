@@ -1,0 +1,1 @@
+folder na zdjęcia about
