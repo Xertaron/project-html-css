@@ -7,7 +7,13 @@
   const closeMenuItem3 = document.querySelector('.js-close-item-3');
   const closeMenuItem4 = document.querySelector('.js-close-item-4');
   const closeMenuItem5 = document.querySelector('.js-close-item-5');
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 
+>>>>>>> f54d21923669695570c493ecdf983b41019a736f
+=======
+>>>>>>> 151c9cdf341c0a7c8779bb8779c310bc4bdc7845
 
   const toggleMenu = () => {
     const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
