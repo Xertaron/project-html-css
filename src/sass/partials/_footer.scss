@@ -12,10 +12,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  width: 389px;
   height: 320px;
-  padding: 32px 14px 32px 16px;
 }
+
 @media screen and (max-width: 1279px) {
   .footer__logo {
     display: none;
@@ -102,10 +101,8 @@
   display: flex;
   gap: 14px;
 }
-.footer__social-icon {
-  fill: $white;
-}
 .footer__social-item {
+  fill: $white;
   &:hover,
   &:focus {
     fill: $hover;
