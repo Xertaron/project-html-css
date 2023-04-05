@@ -88,18 +88,19 @@
     border-radius: 50%;
     min-width: 40px;
     height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 8px;
     @include tablet-only {
-        width: 64px;
-        height: 64px;
-        margin-right: 20px;
+            width: 64px;
+            height: 64px;
+            // margin-right: 20px;
     }
     @include desktop {
         margin-right: 56px;
     }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin-right: 8px;
+   
 
     // font-size: 26px;
     // line-height: 1.2;
@@ -125,8 +126,8 @@
 }
 
 .delivery__description {
-    // padding-left: 20px;
-    // margin-bottom: 14px;
+    padding-left: 20px;
+    margin-bottom: 14px;
     // font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
