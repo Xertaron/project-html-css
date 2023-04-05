@@ -89,6 +89,7 @@
     width: 528px;
     height: 581px;
   }
+<<<<<<< Updated upstream
 }
 
 .fieldset {
@@ -131,4 +132,12 @@
 .fieldset__input-mail:focus,
 .fieldset__input-mail:focus {
   border-color: var(--selection-color);
+=======
+  @include mq(phone) {
+  }
+  @include mq(tablet) {
+  }
+  @include mq(desktop) {
+  }
+>>>>>>> Stashed changes
 }
