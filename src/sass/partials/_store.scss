@@ -1,0 +1,33 @@
+.store {
+  display: flex;
+  gap: 16px;
+}
+.store__header {
+  color: $black;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 32px;
+}
+.store__product {
+  color: $black;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+.store__item--price {
+  color: $black;
+  opacity: 0.6;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+}
+@mixin button-s {
+  width: 170px;
+  height: 40px;
+  border-radius: 38px;
+  background-color: $brand;
+  margin-top: 32px;
+}
