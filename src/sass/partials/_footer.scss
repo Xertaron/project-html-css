@@ -7,11 +7,17 @@
   width: 100%;
 }
 .footer__box {
+  max-width: 320px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
+<<<<<<< Updated upstream
   width: 389px;
   height: 320px;
+=======
+  padding: 32px 14px 32px 16px;
+>>>>>>> Stashed changes
 }
 @media screen and (max-width: 1279px) {
   .footer__logo {
@@ -23,10 +29,8 @@
 }
 .footer__nav-title {
   margin-right: 44px;
-  margin-top: 32px;
   width: 116px;
   height: 22px;
-
   font-size: $medium;
   font-weight: 700;
   color: $white;
@@ -34,6 +38,8 @@
 }
 .footer__nav-item {
   margin-top: 12px;
+  width: 64px;
+  height: 17px;
 }
 .footer__nav-link {
   font-size: $small;
@@ -48,7 +54,6 @@
 }
 .footer__open-times-title {
   width: 130px;
-  margin-top: 32px;
   margin-bottom: 18px;
   font-size: $medium;
   font-weight: 700;
@@ -70,8 +75,7 @@
 }
 .footer__contact-title {
   width: 81px;
-  margin-top: 32px;
-  margin-right: 87.17px;
+  margin: 32px 87.17px 18px 0px;
   font-size: $medium;
   font-weight: 700;
   color: $white;
@@ -101,15 +105,25 @@
   display: flex;
   gap: 14px;
 }
+<<<<<<< Updated upstream
 .footer__social-icon {
   fill: $white;
+=======
+.footer__social-item {
+>>>>>>> Stashed changes
   &:hover,
   &:focus {
     fill: $hover;
   }
 }
+.test {
+  width: 56px;
+  height: 56px;
+}
 @media screen and (min-width: 768px) {
   .footer__box {
+    max-width: 768px;
+    margin: 0 auto;
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: stretch;
@@ -124,6 +138,9 @@
     font-size: 16px;
     margin-left: 24px;
     margin-bottom: 12px;
+  }
+  .footer__nav-item {
+    width: 146px;
   }
   .footer__open-times-title {
     width: 143px;
@@ -161,6 +178,8 @@
     height: 298px;
   }
   .footer__box {
+    max-width: 1280px;
+    margin: 0 auto;
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: stretch;
