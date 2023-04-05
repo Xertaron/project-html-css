@@ -1,97 +1,69 @@
 <section class="store">
-  <h2 class="store__header">STORE</h2>
   <div class="container">
+    <h2 class="store__header">STORE</h2>
+    <hr class="line" />
+
     <ul class="store__list">
       <li class="store__item">
-        <img
-          class="store__img"
-          src="./images/store/bouquet3_mobile.jpg"
-          srcset="./images/store/bouquet3_tablet.jpg, ./images/store/bouquet3@2x_desktop.jpg"
-          alt="bouquet compliments from $15"
-        />
-        <h3 class="store__product">compliments</h3>
-
-        <p class="store__item--price">from $15</p>
-      </li>
-      <li class="store__item">
-        <img
-          class="store__img"
-          src="./images/store/bouquet1_mobile.jpg"
-          srcset="./images/store/bouquet1_tablet.jpg, ./images/store/bouquet1@2x_desktop.jpg"
-          alt="bouquets size S from $25"
-        />
-        <h3 class="store__product">bouquets size S</h3>
-
-        <p class="store__item--price">from $25</p>
-      </li>
-      <li class="store__item">
-        <img
-          class="store__img"
-          src="./images/store/bouquet2_mobile.jpg"
-          srcset="./images/store/bouquet2_tablet.jpg, ./images/store/bouquet2@2x_desktop.jpg"
-          alt="bouquets size M from $45"
-        />
-        <h3 class="store__product">bouquets size M</h3>
-
-        <p class="store__item--price">from $45</p>
-      </li>
-      <li class="store__item">
-        <img
-          class="store__img"
-          src="./images/store/bouquet4_mobile.jpg"
-          srcset="./images/store/bouquet4_tablet.jpg, ./images/store/bouquet4@2x_desktop.jpg"
-          alt="bouquets size L from $60"
-        />
-        <h3 class="store__product">bouquets size L</h3>
-
-        <p class="store__item--price">from $60</p>
-      </li>
-
-      <form class="store__modal modal">
-        <button class="modal__button-s" type="submit">
-          <p class="modal__title">Order flowers</p>
-        </button>
-        <p class="modal__txtinfo">
-          If you have any additional questions or you want to clarify something before you make an
-          order please fill in your contact details. We will call you back.
-        </p>
-
-        <p>Name</p>
-        <label class="modal__label">
-          <input
-            class="modal__input"
-            name="modal__name"
-            type="text"
-            placeholder="Kristin Watson"
-            minlength="5"
+        <picture>
+          <img
+            class="store__img"
+            src="./images/store/bouquet3_mobile.jpg"
+            srcset="./images/store/bouquet3_tablet.jpg, ./images/store/bouquet3@2x_desktop.jpg"
+            alt="bouquet compliments from $15"
           />
-        </label>
-        <label class="modal__label">
-          <textarea
-            class="modal__text--area"
-            name="feedback"
-            placeholder="Kristin Watson"
-          ></textarea>
-        </label>
+        </picture>
 
-        <p>Email</p>
-        <label class="modal__label">
-          <input
-            class="modal__input"
-            name="modal-email"
-            type="email"
-            placeholder="tanya.hill@example.com"
-            minlength="5"
+        <div class="store__product">
+          <h3 class="store__product--name">compliments</h3>
+          <p class="store__product--price">from $15</p>
+        </div>
+      </li>
+      <li class="store__item">
+        <picture>
+          <img
+            class="store__img"
+            src="./images/store/bouquet1_mobile.jpg"
+            srcset="./images/store/bouquet1_tablet.jpg, ./images/store/bouquet1@2x_desktop.jpg"
+            alt="bouquets size S from $25"
           />
-        </label>
-        <label class="modal__label">
-          <textarea
-            class="modal__text--area"
-            name="feedback"
-            placeholder="tanya.hill@example.com"
-          ></textarea>
-        </label>
-      </form>
+        </picture>
+
+        <div class="store__product">
+          <h3 class="store__product--name">bouquets size S</h3>
+          <p class="store__product--price">from $25</p>
+        </div>
+      </li>
+      <li class="store__item">
+        <picture>
+          <img
+            class="store__img"
+            src="./images/store/bouquet2_mobile.jpg"
+            srcset="./images/store/bouquet2_tablet.jpg, ./images/store/bouquet2@2x_desktop.jpg"
+            alt="bouquets size M from $45"
+          />
+        </picture>
+
+        <div class="store__product">
+          <h3 class="store__product--name">bouquets size M</h3>
+          <p class="store__product--price">from $45</p>
+        </div>
+      </li>
+      <li class="store__item">
+        <picture>
+          <img
+            class="store__img"
+            src="./images/store/bouquet4_mobile.jpg"
+            srcset="./images/store/bouquet4_tablet.jpg, ./images/store/bouquet4@2x_desktop.jpg"
+            alt="bouquets size L from $60"
+          />
+        </picture>
+
+        <div class="store__product">
+          <h3 class="store__product--name">bouquets size L</h3>
+          <p class="store__product--price">from $60</p>
+        </div>
+      </li>
     </ul>
   </div>
 </section>
