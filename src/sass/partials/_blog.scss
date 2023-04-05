@@ -297,3 +297,27 @@
     font-size: 16px;
   }
 }
+.blog__btn-sub {
+  display: flex;
+  margin: auto;
+  padding: 8px 39.5px;
+  background-color: $button;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  align-items: center;
+  border: 0;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  color: $white;
+  transition: $transition;
+  border-radius: 34px;
+  width: 170px;
+  height: 40px;
+  &:hover,
+  &:focus {
+    background-color: $hover;
+    color: $white;
+  }
+}
