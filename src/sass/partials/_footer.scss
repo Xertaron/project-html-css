@@ -12,6 +12,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
+
   height: 320px;
 }
 
@@ -102,14 +103,11 @@
   gap: 14px;
 }
 .footer__social-icon {
+  fill: $white;
   &:hover,
   &:focus {
     fill: $hover;
   }
-}
-.test {
-  width: 56px;
-  height: 56px;
 }
 @media screen and (min-width: 768px) {
   .footer__box {
@@ -174,6 +172,7 @@
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: stretch;
+    justify-content: space-evenly;
   }
   .logo__box {
     margin: 72px 210px 169px 24px;
