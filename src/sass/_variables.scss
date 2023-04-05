@@ -9,6 +9,8 @@ $invalid: rgba(231, 74, 59, 1);
 $input: rgba(215, 215, 215, 1);
 $input-hover: rgba(17, 17, 17, 0.7);
 $price: rgba(0, 0, 0, 0.6);
+$sendButton: rgba(232, 111, 84, 0.4);
+$support: rgba(117, 117, 117, 1);
 
 //Czcionki
 $small: 14px;
@@ -22,17 +24,12 @@ $transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
 //Media Query
 
-@mixin phone {
+@mixin mobile-up {
   @media screen and (min-width: 480px) {
     @content;
   }
 }
-@mixin phone-up {
-  @media screen and (min-width: 480px) {
-    @content;
-  }
-}
-@mixin phone-only {
+@mixin mobile-only {
   @media screen and (min-width: 480px) and (max-width: 767px) {
     @content;
   }
@@ -77,4 +74,22 @@ $transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   height: 40px;
   border-radius: 38px;
   background-color: $brand;
+}
+// Przycisk hero
+@mixin button {
+  background-color: transparent;
+  box-shadow: transparent;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $black;
+  fill: $black;
+  cursor: pointer;
+  border-style: line $support;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

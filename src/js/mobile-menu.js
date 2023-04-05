@@ -8,7 +8,6 @@
   const closeMenuItem4 = document.querySelector('.js-close-item-4');
   const closeMenuItem5 = document.querySelector('.js-close-item-5');
 
-
   const toggleMenu = () => {
     const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);

@@ -15,20 +15,34 @@
 
     <li class="about-list__item">
       <picture>
-        <img
-          class="about-picture"
+        <source
+          media="(min-width: 480px) and (max-width: 767px)"
           src="./images/about/image_about-mobile.jpg"
           srcset="
-            ./images/about/image_about-mobile.jpg      320w,
-            ./images/about/image_about@2x-mobile.jpg   640w,
-            ./images/about/image_about-tablet.jpg      768w,
-            ./images/about/image_about@2x-tablet.jpg  1536w,
-            ./images/about/image_about-desktop.jpg    1280w,
-            ./images/about/image_about@2x-desktop.jpg 2560w
+            ./images/about/image_about-mobile.jpg    1x,
+            ./images/about/image_about@2x-mobile.jpg 2x
           "
-          sizes="(min-width: 1280px) 1280px, (min-width: 768px) 768px, 320px"
-          alt="pink flowers"
+          type="image/jpeg"
         />
+        <source
+          media="(min-width: 768px) and (max-width: 1279px)"
+          src="./images/about/image_about-tablet.jpg"
+          srcset="
+            ./images/about/image_about-tablet.jpg    1x,
+            ./images/about/image_about@2x-tablet.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <source
+          media="(min-width: 1280px)"
+          src="./images/about/image_about-desktop.jpg"
+          srcset="
+            ./images/about/image_about-desktop.jpg    1x,
+            ./images/about/image_about@2x-desktop.jpg 2x
+          "
+          type="image/jpeg"
+        />
+        <img class="about-picture" src="./images/about/image_about-mobile.jpg" alt="pink flowers" />
       </picture>
     </li>
   </ul>
