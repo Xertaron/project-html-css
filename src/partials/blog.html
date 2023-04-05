@@ -1,48 +1,60 @@
-<body>
-  <section class="blog">
-    <div>
-      <h2 class="blog__header">BLOG</h2>
-      <ul class="blog__posts">
-        <li class="blog__items">
-          <img
-            src="/src/images/blog/flowers_image1.jpg"
-            width="390"
-            height="421"
-            alt="Leaves of eucalyptus"
-          />
-        </li>
-        <li class="blog__items">
-          <img
-            src="/src/images/blog/flowers_image2.jpg"
-            width="390"
-            height="421"
-            alt="Flower of zantedeschia"
-          />
-        </li>
-        <li class="blog__items">
-          <img
-            src="/src/images/blog/flowers_image3.jpg"
-            width="390"
-            height="421"
-            alt="Flower of iris"
-          />
-        </li>
-      </ul>
-    </div>
-    <div>
-        <p class="newsletter__text">Follow to our newsletter</p>
-         <button class="newsletter__button" type="button" data-modal-open>Subscribe</button>
-          <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <button type="button" class="modal__button" data-modal-close><img src="/src/images/blog/blog_cross.jpg" width="24" height="24"></button>
-            <form class="modal__form">
-              <p class="modal__title">Follow to our newsletter</p>
-              <p class="modal__text">Be the first to get exclusive offers and the latest news on our product directly in your box.</p>
-              <div class="fieldset">
-                <label for="mail" class="fieldset__label">Email</label>
-                <input required class="fieldset__input-mail" type="text" name="mail" id="mail">
-              </div>
-        </div>
-    </div>
-  </section>
-</body>
+<section class="section blog" id="blog">
+  <h2 class="blog__header">BLOG
+    <hr class="line" />
+  </h2>
+  <div class="blog__gallery">
+    <img
+      class="blog__img"
+      src="./images/blog/blog-mobile.jpg"
+      srcset="
+        ./images/blog/blog-mobile.jpg      288w,
+        ./images/blog/blog-tablet.jpg      344w,
+        ./images/blog/blog-desktop.jpg     632w,
+        ./images/blog/blog-mobile@2x.jpg   576w,
+        ./images/blog/blog-tablet@2x.jpg   688w,
+        ./images/blog/blog-desktop@2x.jpg 1264w
+      "
+      sizes="(min-width: 1280px) 632px, (min-width: 768px) 344px, 288px"
+      alt="pink flowers"
+    />
+    <img
+      class="blog__img"
+      src="./images/blog/blog-mobile.jpg"
+      srcset="
+        ./images/blog/blog3-mobile.jpg      288w,
+        ./images/blog/blog3-tablet.jpg      344w,
+        ./images/blog/blog3-desktop.jpg     632w,
+        ./images/blog/blog3-mobile@2x.jpg   576w,
+        ./images/blog/blog3-tablet@2x.jpg   688w,
+        ./images/blog/blog3-desktop@2x.jpg 1264w
+      "
+      sizes="(min-width: 1280px) 632px, (min-width: 768px) 344px, 288px"
+      alt="pink flowers"
+    />
+    <img
+      class="blog__img"
+      src="./images/blog/blog-mobile.jpg"
+      srcset="
+        ./images/blog/blog4-mobile.jpg     136w,
+        ./images/blog/blog4-tablet.jpg     344w,
+        ./images/blog/blog4-desktop.jpg    390w,
+        ./images/blog/blog4-mobile@2x.jpg  272w,
+        ./images/blog/blog4-tablet@2x.jpg  688w,
+        ./images/blog/blog4-desktop@2x.jpg 780w
+      "
+      sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, 136px"
+      alt="pink flowers"
+    />
+  </div>
+  <div class="blog__slider-btns">
+    <svg class="blog__btn-left" width="50" height="50">
+      <use href="./images/icons/sprite.svg#icon-arrow-left"></use>
+    </svg>
+
+    <svg class="blog__btn-right" width="50" height="50">
+      <use href="./images/icons/sprite.svg#icon-arrow-right"></use>
+    </svg>
+  </div>
+  <p class="blog__description">Follow to our newsletter</p>
+  <button class="btn blog__btn-sub" type="button" data-modal-open>Subscribe</button>
+</section>

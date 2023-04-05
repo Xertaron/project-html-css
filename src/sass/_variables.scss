@@ -22,17 +22,12 @@ $transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
 //Media Query
 
-@mixin phone {
+@mixin mobile-up {
   @media screen and (min-width: 480px) {
     @content;
   }
 }
-@mixin phone-up {
-  @media screen and (min-width: 480px) {
-    @content;
-  }
-}
-@mixin phone-only {
+@mixin mobile-only {
   @media screen and (min-width: 480px) and (max-width: 767px) {
     @content;
   }
