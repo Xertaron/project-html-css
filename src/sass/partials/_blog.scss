@@ -63,9 +63,9 @@
   line-height: 1.33;
   border: 0;
   letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   color: $white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   transition: $transition;
   border-radius: 34px;
   width: 170px;
@@ -73,7 +73,8 @@
   &:hover,
   &:focus {
     background-color: $hover;
-    color: $white;
+    color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 @media screen and (min-width: 768px) {
@@ -97,6 +98,12 @@
   .blog__slider-btns {
     margin-bottom: 18px;
   }
+  .blog__btn-left {
+    cursor: pointer;
+  }
+  .blog__btn-right {
+    cursor: pointer;
+  }
   .blog__description {
     font-size: 32px;
     font-weight: 500;
@@ -109,6 +116,10 @@
     font-size: 28px;
     font-weight: 500;
     margin-bottom: 100px;
+    transition: $transition;
+    &:hover,
+    &:focus {
+    }
   }
 }
 @media screen and (min-width: 1280px) {
