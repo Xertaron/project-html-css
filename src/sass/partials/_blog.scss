@@ -21,18 +21,17 @@
   }
   &__slider-btns {
     text-align: center;
-    margin-bottom: 14px;
   }
   &__btn-left {
     cursor: pointer;
-    margin: 26.5px 14.55px 36.5px 0px;
+    margin: 4px 14.55px 14px 0px;
     @include tablet-up {
       width: 61px;
       height: 61px;
     }
   }
   &__btn-right {
-    margin: 26.5px 0px 36.5px 14.55px;
+    margin: 4px 0px 14px 14.55px;
     cursor: pointer;
     @include tablet-up {
       width: 61px;
@@ -264,6 +263,7 @@
 .blog__btn-sub {
   display: flex;
   margin: auto;
+  margin-bottom: 60px;
   padding: 8px 39.5px;
   background-color: $button;
   font-weight: 500;
