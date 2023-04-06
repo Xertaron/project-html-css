@@ -67,6 +67,20 @@
     font-size: 24px;
     line-height: 1.2;
   }
+}
+@include desktop {
+  .store {
+    display: flex;
+    flex-direction: column;
+  }
+  .store__header {
+    display: table;
+    width: 100%;
+    content: '';
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.23;
+  }
   .line {
     display: table-cell;
     width: 100%;
@@ -125,4 +139,70 @@
     font-size: 28px;
     line-height: 1.2;
   }
+}
+.modal {
+  display: none;
+  position: absolute;
+  margin-top: 32px;
+}
+.modal__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: $white;
+  margin: 10px 35px;
+}
+.modal__button {
+  margin: auto;
+  margin-bottom: 60px;
+  padding: 8px 39.5px;
+  background-color: $button;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  border: 0;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  color: $white;
+  transition: $transition;
+  border-radius: 34px;
+  width: 170px;
+  height: 40px;
+  &:hover,
+  &:focus {
+    background-color: $hover;
+    color: $white;
+  }
+}
+.modal__title-contact {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: left;
+}
+.modal__txtinfo {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: left;
+  color: rgb(92, 92, 92);
+}
+.modal__label {
+  display: inline-flex;
+  flex-direction: column;
+}
+.modal__span {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.2;
+  color: rgb(92, 92, 92);
+}
+.modal__close-btn {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid $black;
 }
