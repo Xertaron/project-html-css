@@ -24,7 +24,9 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    @include mobile-up {
+      justify-content: center;
+    }
     @include desktop {
       justify-content: flex-start;
     }
@@ -82,10 +84,6 @@
     transform: translateX (50%, -10%);
     &:hover {
       cursor: pointer;
-    }
-    @include desktop-down {
-      margin-left: -20px;
-      z-index: -1;
     }
   }
 }
