@@ -77,17 +77,6 @@
     }
   }
 }
-
-.hero-button {
-  @include desktop {
-    position: absolute;
-    top: 64%;
-    right: 8%;
-  }
-  @include desktop-down {
-    display: block;
-  }
-}
 .hero-button--mobile {
   display: none;
   @include tablet-down {
