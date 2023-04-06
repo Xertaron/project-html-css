@@ -25,9 +25,8 @@
     position: relative;
     display: flex;
     align-items: center;
-    @include mobile-up {
-      justify-content: center;
-    }
+    justify-content: center;
+
     @include desktop {
       justify-content: flex-start;
     }
@@ -51,6 +50,7 @@
       top: 40%;
       left: 55%;
       font-size: 11vw;
+      color: $white;
     }
   }
 
