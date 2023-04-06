@@ -3,115 +3,158 @@
   background-color: $white;
   background-position: center;
   padding: 118px 0;
-  height: 850px;
 
   &__background {
-    width: 542px;
-    height: 636px;
     border-radius: 100px;
     background-color: transparent;
+    @include desktop {
+      width: 100vw;
+      max-width: 1280px;
+      border-radius: 0;
+    }
   }
 
   &__content {
-    position: absolute;
+    padding-top: 50px;
+    padding-bottom: 36px;
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    @include desktop {
+      justify-content: flex-start;
+    }
   }
 
   &__title {
     position: absolute;
-    max-width: 876px;
-    height: 195px;
+    font-family: 'Montserrat', sans-serif;
+
     font-weight: 400;
-    font-size: 160px;
+    font-size: 52px;
     letter-spacing: 0.06em;
     color: $black;
     text-transform: uppercase;
+    font-size: 15vw;
     margin-bottom: 0;
     text-align: center;
     left: 50%;
-    top: 85%;
+    top: 83%;
     transform: translateX(-50%);
     z-index: 1;
-  }
-
-  &__text-container {
-    height: 424px;
+    line-height: 1;
+    @include desktop {
+      top: 40%;
+      left: 55%;
+    }
   }
 
   &__subtitle {
-    width: 101px;
+    margin-right: calc(5.8% + 7px);
     font-weight: 400;
-    font-size: 32px;
+    font-size: min(calc(2.23vw + 3px), 32px);
     line-height: 100%;
     margin-top: 0;
     margin-bottom: 0;
-    margin-right: 43px;
     color: $black;
+    @include desktop {
+      position: absolute;
+      top: 68%;
+      left: 15%;
+      color: $white;
+    }
   }
 
   &__button {
-    @include button;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 25px;
-    width: 166px;
-    height: 166px;
+    // @extend %button;
+    margin-left: 2.68%;
+    display: hidden;
+    background-color: $white;
+    border: none;
     fill: $black;
     top: 50%;
     right: 10%;
-    transform: translateX(50%, -10%);
+    transform: translateX (50%, -10%);
+    &:hover {
+      cursor: pointer;
+    }
+    @include desktop-down {
+      margin-left: -20px;
+      z-index: -1;
+    }
   }
 }
-.section {
-  padding: 60px 0;
-  margin: 0 auto;
+
+.hero-button--mobile {
+  display: none;
+  @include tablet-down {
+    display: block;
+  }
+}
+.hero-button--tablet {
+  display: none;
+  @include tablet-only {
+    display: block;
+  }
+}
+.hero-button--desktop {
+  display: none;
   @include desktop {
-    padding: 94px 0;
-  }
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .hero-background {
-    flex-basis: calc(100% - 60px);
-  }
-}
-
-// MOBILE RESPONSIVE
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .hero-background {
-    flex-basis: calc((100% - 60px));
-  }
-}
-
-// TABLET RESPONSIVE
-
-@media screen and (min-width: 768px) and (max-width: 1282px) {
-  .hero__text-container {
-    position: relative;
-  }
-  .hero__title {
-    text-align: left;
-  }
-}
-
-// DESKTOP RESPONSIVE
-
-@media screen and (min-width: 1283px) {
-  .hero-background {
-    padding: auto 0;
+    display: block;
     position: absolute;
+    top: 64%;
+    right: -2%;
+    fill: $white;
   }
 }
 
-@media screen and (min-width: 1283px) {
-  .list {
-    flex-wrap: nowrap;
-  }
-}
+// @media screen and (min-width: 320px) and (max-width: 767px) {
+//   .hero {
+//     flex-basis: calc(100% - 60px);
+//   }
+// }
+
+// @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//   .hero {
+//     background-image: url('../images/hero/hero_underlay_320@2x.jpg');
+//   }
+// }
+
+// // MOBILE RESPONSIVE
+
+// @media screen and (min-width: 320px) and (max-width: 767px) {
+//   .hero {
+//     flex-basis: calc((100% - 60px));
+//   }
+// }
+
+// // TABLET RESPONSIVE
+
+// @media screen and (min-width: 768px) and (max-width: 1282px) {
+//   .hero__text-container {
+//     position: relative;
+//   }
+//   .hero__title {
+//     text-align: left;
+//   }
+//   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//     .hero {
+//       background-image: url('../images/hero/hero_underlay_768@2x.jpg');
+//     }
+//   }
+// }
+
+// // DESKTOP RESPONSIVE
+
+// @media screen and (min-width: 1283px) {
+//   .hero {
+//     padding: auto 0;
+//     position: absolute;
+//   }
+// }
+
+// @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//   .hero {
+//     background-image: url('../images/hero/hero_underlay@2x.jpg');
+//   }
+// }

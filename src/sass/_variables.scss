@@ -49,6 +49,11 @@ $transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     @content;
   }
 }
+@mixin desktop-down {
+  @media screen and (max-width: 1279px) {
+    @content;
+  }
+}
 @mixin desktop {
   @media screen and (min-width: 1280px) {
     @content;

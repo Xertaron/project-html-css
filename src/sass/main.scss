@@ -17,9 +17,15 @@
   box-sizing: border-box;
 }
 
-body {
+header,
+body,
+section {
   margin: auto;
   font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+  font-family: 'Inter', sans-serif;
 }
 
 ul,
@@ -29,9 +35,6 @@ ol {
   margin: 0;
 }
 
-footer {
-  font-family: 'Inter', sans-serif;
-}
 .container {
   @include tablet-down {
     margin: 60px 16px;
