@@ -8,7 +8,8 @@
     border-radius: 100px;
     background-color: transparent;
     @include desktop {
-      max-width: 100vw;
+      width: 100vw;
+      max-width: 1280px;
       border-radius: 0;
     }
 
@@ -53,8 +54,13 @@
     line-height: 100%;
     margin-top: 0;
     margin-bottom: 0;
-
     color: $black;
+    @include desktop {
+      position: absolute;
+      top: 68%;
+      left: 15%;
+      color: $white;
+    }
   }
 
   &__button {
@@ -63,8 +69,6 @@
     display: hidden;
     background-color: $white;
     border: none;
-    width: min(calc(18vw + 6px), 166px);
-    height: min(calc(18vw + 6px), 166px);
     fill: $black;
     top: 50%;
     right: 10%;
@@ -75,10 +79,27 @@
   }
 }
 
-.hero-button {
-  width: 100%;
-  height: 100%;
-  display: block;
+.hero-button--mobile {
+  display: none;
+  @include tablet-down {
+    display: block;
+  }
+}
+.hero-button--tablet {
+  display: none;
+  @include tablet-only {
+    display: block;
+  }
+}
+.hero-button--desktop {
+  display: none;
+  @include desktop {
+    display: block;
+    position: absolute;
+    top: 64%;
+    right: -2%;
+    fill: $white;
+  }
 }
 
 // @media screen and (min-width: 320px) and (max-width: 767px) {

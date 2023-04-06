@@ -1,5 +1,5 @@
 <!--Header makiety - HERO BLOCK-->
-<section>
+<section class="container">
   <!-- <div class="container"> -->
   <div class="hero__content">
     <h1 class="hero__title">ANEMONĒ</h1>
@@ -27,8 +27,18 @@
     </picture>
     <!--BUTTON BLOCK-->
     <button type="button" class="hero__button" data-modal-open>
-      <svg class="hero-button">
-        <use href="./images/icons/sprite.svg#icon-Shop-now-mobile"></use>
+      <svg class="hero-button--mobile">
+        <use href="./images/icons/sprite.svg#icon-shop-now-mobile"></use>
+      </svg>
+    </button>
+    <button type="button" class="hero__button" data-modal-open>
+      <svg class="hero-button--tablet">
+        <use href="./images/icons/sprite.svg#icon-shop-now-tablet"></use>
+      </svg>
+    </button>
+    <button type="button" class="hero__button" data-modal-open>
+      <svg class="hero-button--desktop">
+        <use href="./images/icons/sprite.svg#icon-shop-now-desktop"></use>
       </svg>
     </button>
     <!--END BUTTON BLOCK-->
@@ -70,6 +80,6 @@
   </div>
 </section>
 
-<script defer src="js/mobile-menu-alt.js"></script>
+<script defer src="./js/mobile-menu-alt.js"></script>
 <script src="./js/modal.js"></script>
 <!--END MODAL BLOCK-->
