@@ -20,7 +20,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     @include desktop {
       justify-content: flex-start;
     }
@@ -85,19 +85,19 @@
   }
 }
 
-.hero-button--mobile {
+.hero__button--mobile {
   display: none;
   @include tablet-down {
     display: block;
   }
 }
-.hero-button--tablet {
+.hero__button--tablet {
   display: none;
   @include tablet-only {
     display: block;
   }
 }
-.hero-button--desktop {
+.hero__button--desktop {
   display: none;
   @include desktop {
     display: block;
@@ -107,7 +107,18 @@
     fill: $white;
   }
 }
-
+.hero__icon--mobile {
+  width: 64px;
+  height: 76px;
+}
+.hero__icon--tablet {
+  width: 145px;
+  height: 150px;
+}
+.hero__icon--desktop {
+  width: 166px;
+  height: 166px;
+}
 // @media screen and (min-width: 320px) and (max-width: 767px) {
 //   .hero {
 //     flex-basis: calc(100% - 60px);
