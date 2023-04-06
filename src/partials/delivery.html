@@ -1,49 +1,69 @@
 <body>
-    <section class="delivery container">
-        <h2 class="delivery__header">DELIVERY 
-            <!-- <hr class="line"/> -->
-        </h2>
-        <ul class="delivery__list">
-            <li class="delivery__item">
-                <div class="delivery__step">
-                    <span class="delivery__number">1</span>
-                </div>
-                <p class="delivery__description">Choose your bouquet and make an order on website
-                </p>
-            </li>
-            <li class="delivery__item">
-                <div class="delivery__step">
-                    <span class="delivery__number">2</span>
-                </div>
-                <p class="delivery__description">Wait for the call to clarify the details of the order. You can pay online or to the courier
-                </p>
-            </li>
-            <li class="delivery__item">
-                <div class="delivery__step">
-                    <span class="delivery__number">3</span>
-                </div>
-                <p class="delivery__description">Wait for the delivery at the selected time or pick up the order from the store
-                </p>
-            </li>
-            <li class="delivery__item">
-                <div class="delivery__step">
-                    <span class="delivery__number">4</span>
-                </div>
-                <p class="delivery__description">Make someone happy or enjoy yourself
-                </p>
-            </li>
-        </ul>
-        <img class="delivery__image" src="/src/images/delivery/image-delivery-mobile.jpg"
+  <section class="delivery">
+    <h2 class="delivery__header">
+      DELIVERY
+      <hr class="line" />
+    </h2>
+    <ul class="delivery__list">
+      <li class="delivery__item">
+        <div class="delivery__step">
+          <span class="delivery__number">1</span>
+        </div>
+        <p class="delivery__description">Choose your bouquet and make an order on website</p>
+      </li>
+      <li class="delivery__item">
+        <div class="delivery__step">
+          <span class="delivery__number">2</span>
+        </div>
+        <p class="delivery__description">
+          Wait for the call to clarify the details of the order. You can pay online or to the
+          courier
+        </p>
+      </li>
+      <li class="delivery__item">
+        <div class="delivery__step">
+          <span class="delivery__number">3</span>
+        </div>
+        <p class="delivery__description">
+          Wait for the delivery at the selected time or pick up the order from the store
+        </p>
+      </li>
+      <li class="delivery__item">
+        <div class="delivery__step">
+          <span class="delivery__number">4</span>
+        </div>
+        <p class="delivery__description">Make someone happy or enjoy yourself</p>
+      </li>
+    </ul>
+    <picture>
+      <source
+        media="(min-width: 360px) and (max-width: 785px)"
+        srcset="./images/delivery/image-delivery-mobile.jpg"
         srcset="
-        /src/images/delivery/image-delivery-desktop.jpg    1280w,
-        /src/images/delivery/image-delivery-tablet.jpg      768w,
-        /src/images/delivery/image-delivery-mobile.jpg      320w,
-        /src/images/delivery/image-delivery-desktop@2x.jpg 2560w,
-        /src/images/delivery/image-delivery-tablet@2x.jpg  1536w,
-        /src/images/delivery/image-delivery-mobile@2x.jpg   640w
+          ./images/delivery/image-delivery-mobile.jpg    1x,
+          ./images/delivery/image-delivery-mobile@2x.jpg 2x
         "
-        sizes="(min-width: 1280px) 1280px, (min-width: 768px) 768px, 320px" 
-        alt="Flowers">
-    </section>
+        type="image/jpeg"
+      />
+      <source
+        media="(min-width: 768px) and (max-width: 1199px)"
+        srcset="./images/delivery/image-delivery-tablet.jpg"
+        srcset="
+          ./images/delivery/image-delivery-tablet.jpg    1x,
+          ./images/delivery/image-delivery-tablet@2x.jpg 2x
+        "
+        type="image/jpeg"
+      />
+      <source
+        media="(min-width: 1200px)"
+        srcset="./images/delivery/image-delivery-desktop.jpg"
+        srcset="
+          ./images/delivery/image-delivery-desktop.jpg    1x,
+          ./images/delivery/image-delivery-desktop@2x.jpg 2x
+        "
+        type="image/jpeg"
+      />
+      <img src="./images/delivery/image-delivery-mobile.jpg" alt="Flowers" />
+    </picture>
+  </section>
 </body>
-
