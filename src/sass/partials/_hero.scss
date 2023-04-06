@@ -10,6 +10,7 @@
     background-color: transparent;
     @include mobile-up {
       max-width: 390px;
+      width: 20vw;
     }
     @include desktop {
       width: 100vw;
@@ -121,6 +122,9 @@
 .hero__icon--desktop {
   width: 166px;
   height: 166px;
+}
+.container {
+  margin-top: 0;
 }
 // @media screen and (min-width: 320px) and (max-width: 767px) {
 //   .hero {
