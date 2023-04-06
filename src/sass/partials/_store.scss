@@ -95,7 +95,7 @@
     font-size: 24px;
     line-height: 1.2;
   }
- }
+}
 @include desktop {
   .store {
     display: flex;
@@ -146,7 +146,7 @@
     font-size: 28px;
     line-height: 1.2;
   }
- }
+}
 .modal {
   display: none;
   position: absolute;
@@ -160,14 +160,13 @@
   margin: 10px 35px;
 }
 .modal__button {
-  display: flex;
   margin: auto;
+  margin-bottom: 60px;
   padding: 8px 39.5px;
   background-color: $button;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.33;
-  align-items: center;
   border: 0;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -177,6 +176,11 @@
   border-radius: 34px;
   width: 170px;
   height: 40px;
+  &:hover,
+  &:focus {
+    background-color: $hover;
+    color: $white;
+  }
   &:hover,
   &:focus {
     background-color: $hover;
