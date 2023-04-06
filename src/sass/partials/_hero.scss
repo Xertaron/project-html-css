@@ -79,6 +79,7 @@
     }
   }
 }
+
 .hero-button--mobile {
   display: none;
   @include tablet-down {
@@ -95,6 +96,9 @@
   display: none;
   @include desktop {
     display: block;
+    position: absolute;
+    top: 64%;
+    right: 8%;
   }
 }
 
