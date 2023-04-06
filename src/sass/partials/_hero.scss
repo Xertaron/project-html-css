@@ -12,6 +12,7 @@
       max-width: 1280px;
       border-radius: 0;
     }
+
   }
 
   &__content {
@@ -52,7 +53,7 @@
   &__subtitle {
     margin-right: calc(5.8% + 7px);
     font-weight: 400;
-    font-size: calc(2.23vw + 3px);
+    font-size: min(calc(2.23vw + 3px), 32px);
     line-height: 100%;
     margin-top: 0;
     margin-bottom: 0;
