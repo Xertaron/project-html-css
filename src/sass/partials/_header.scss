@@ -96,10 +96,12 @@
   padding: 124px 40px;
   background-color: $button;
   z-index: 999;
-  visibility: hidden;
-
   transform: translateX(200%);
   transition: transform 250ms ease-in-out;
+  @include tablet-down {
+    visibility: hidden;
+  }
+
   @include tablet-up {
     position: relative;
     display: block;
