@@ -10,7 +10,7 @@
     background-color: transparent;
     @include mobile-up {
       max-width: 390px;
-      width: 20vw;
+      width: 40vw;
     }
     @include desktop {
       width: 100vw;
