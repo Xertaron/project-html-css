@@ -6,33 +6,28 @@
   content: '';
   display: table;
   width: 100%;
-  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.21;
+  margin-bottom: 32px;
 }
 .line {
   display: table-cell;
   width: 100%;
-  padding-left: 14px;
+  padding-left: 8px;
   border: none;
 }
 .line:after {
   content: '';
-  border-top: 1px solid #000000;
+  border-top: 1px solid $black;
   width: 100%;
   display: inline-block;
   vertical-align: middle;
 }
-
 .store__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-}
-.store__item {
-  margin-top: 32px;
+  justify-content: space-between;
   gap: 16px;
 }
 .store__product {
@@ -75,16 +70,10 @@
   .store__list {
     gap: 32px;
   }
-  .store__item {
-    margin-top: 60px;
-    gap: 32px;
-  }
   .store__product {
     margin-bottom: 40px;
   }
   .store__product--name {
-    display: table;
-    width: 100%;
     font-size: 32px;
     line-height: 1.25;
     margin-top: 16px;
@@ -112,6 +101,47 @@
   .line {
     display: table-cell;
     width: 100%;
+    padding-left: 8px;
+    border: none;
+  }
+  .line:after {
+    content: '';
+    border-top: 1px solid #000000;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .store__item--price {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+
+@include desktop {
+  .store {
+    display: flex;
+    flex-direction: column;
+  }
+  .store__header {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.23;
+  }
+  .store__list {
+    gap: 32px;
+  }
+  .store__product {
+    margin-bottom: 64px;
+  }
+  .store__product--name {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-top: 16px;
+    margin-bottom: 4px;
+  }
+  .line {
+    display: table-cell;
+    width: 100%;
     padding-left: 16px;
     border: none;
   }
@@ -122,26 +152,6 @@
     display: inline-block;
     vertical-align: middle;
   }
-  .store__list {
-    display: flex;
-    gap: 32px;
-    flex-basis: 50%;
-  }
-  .store__item {
-    margin-top: 80px;
-    gap: 32px;
-  }
-  .store__product {
-    margin-bottom: 64px;
-  }
-  .store__product--name {
-    display: table;
-    font-size: 36px;
-    line-height: 1.2;
-    margin-top: 16px;
-    margin-bottom: 4px;
-  }
-
   .store__item--price {
     font-size: 28px;
     line-height: 1.2;
