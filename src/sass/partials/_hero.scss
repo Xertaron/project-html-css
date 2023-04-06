@@ -50,6 +50,7 @@
     @include desktop {
       top: 40%;
       left: 55%;
+      font-size: 13vw;
     }
   }
 
@@ -107,7 +108,7 @@
     display: block;
     position: absolute;
     top: 64%;
-    right: -2%;
+    right: 2%;
     fill: $white;
   }
 }
