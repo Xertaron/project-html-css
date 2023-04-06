@@ -9,6 +9,11 @@
     background-color: transparent;
     width: calc(54.7% - 30px);
     max-width: 390px;
+
+    @include desktop {
+      width: 100vw;
+    }
+
   }
 
   &__content {

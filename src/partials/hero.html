@@ -7,12 +7,24 @@
       >flower <br />
       studio</p1
     >
-    <img
-      class="hero__background"
-      src="./images/hero/hero_underlay_320.jpg"
-      alt="kwiat full screen"
-    />
-
+    <picture>
+      <source
+        media="(min-width:1280px) and (min-device-pixel-ratio: 2)"
+        srcset="./images/hero/hero_desktop@2x.jpg"
+      />
+      <source media="(min-width:1280px)" srcset="./images/hero/hero_desktop.jpg" />
+      <source
+        media="(min-width:768px) and (min-device-pixel-ratio: 2)"
+        srcset="./images/hero/hero_underlay_768@2x.jpg"
+      />
+      <source media="(min-width:768px)" srcset="./images/hero/hero_underlay_768.jpg" />
+      <source media="(min-device-pixel-ratio: 2)" srcset="./images/hero/hero_underlay_320.jpg" />
+      <img
+        class="hero__background"
+        src="./images/hero/hero_underlay_320.jpg"
+        alt="kwiat full screen"
+      />
+    </picture>
     <!--BUTTON BLOCK-->
     <button type="button" class="hero__button" data-modal-open>
       <svg class="hero-button">
