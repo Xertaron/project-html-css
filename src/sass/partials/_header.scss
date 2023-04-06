@@ -3,8 +3,9 @@
   display: flex;
   flex-direction: row;
 
+  align-items: center;
   margin: 0 auto;
-  padding: 16px 0;
+  padding: 16px 16px 16px 0;
 
   @include tablet-up {
     margin: 0 auto 100px auto;
@@ -14,35 +15,50 @@
 }
 
 .header__logo {
-  position: absolute;
-  left: 16px;
-  top: 16px;
   display: block;
   fill: black;
+
   @include tablet-up {
     width: 72px;
     height: 57px;
-    left: 24px;
-    top: 24px;
   }
   @include desktop {
     top: 28px;
   }
 }
 
+.header__logo-link,
 .header__phone-link {
-  position: absolute;
-  right: 54px;
-  top: 18px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.header__logo-link {
+  margin-right: auto;
+  padding-left: 16px;
   @include tablet-up {
-    top: 40px;
-    right: 24px;
+    padding-left: 24px;
+  }
+}
+
+.header__phone-link {
+  margin-left: auto;
+  margin-right: 17px;
+  display: block;
+  z-index: 998;
+  include tablet-up {
+    padding-right: 25px;
+  }
+  @include desktop {
+    padding-right: 28px;
   }
 }
 
 .header__phone {
   display: block;
   fill: black;
+  cursor: pointer;
   @include tablet-up {
     width: 24px;
     height: 24px;
@@ -54,16 +70,12 @@
 }
 
 .header__burger {
-  position: absolute;
-  right: 16px;
-  top: 16px;
   display: block;
   fill: black;
+  z-index: 998;
 }
 
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,7 +142,7 @@
   @include tablet-up {
     display: flex;
     flex-direction: row;
-    padding-left: calc(35% - 96px);
+    margin-left: calc(35.35% - 144px);
   }
 }
 
@@ -138,8 +150,10 @@
   @include tablet-up {
     padding: 0;
     margin: 0;
-    margin-right: calc(4.6875% - 12px);
   }
+}
+.mobile-menu__item:not(:last-child) {
+  margin-right: calc(4.6875% - 4px);
 }
 
 .mobile-menu__link {
