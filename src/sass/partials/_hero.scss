@@ -25,9 +25,8 @@
     position: relative;
     display: flex;
     align-items: center;
-    @include mobile-up {
-      justify-content: center;
-    }
+    justify-content: center;
+
     @include desktop {
       justify-content: flex-start;
     }
