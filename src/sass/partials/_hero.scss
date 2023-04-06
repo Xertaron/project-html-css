@@ -8,6 +8,9 @@
     border-radius: 100px;
     background-color: transparent;
     width: calc(54.7% - 30px);
+    @include desktop {
+      width: 100vw;
+    }
   }
 
   &__content {
