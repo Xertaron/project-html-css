@@ -8,6 +8,7 @@
     border-radius: 100px;
     background-color: transparent;
     width: calc(54.7% - 30px);
+    max-width: 390px;
   }
 
   &__content {
@@ -24,7 +25,8 @@
     font-family: 'Montserrat', sans-serif;
 
     font-weight: 400;
-    font-size: calc(15.17vw + 4px);
+
+    font-size: min(calc(15.17vw + 4px), 160px);
     letter-spacing: 0.06em;
     color: $black;
     text-transform: uppercase;
@@ -41,7 +43,7 @@
     margin-right: calc(5.8% + 7px);
     font-family: 'Montserrat';
     font-weight: 400;
-    font-size: calc(2.23vw + 3px);
+    font-size: min(calc(2.23vw + 3px), 32px);
     line-height: 100%;
     margin-top: 0;
     margin-bottom: 0;
@@ -55,8 +57,8 @@
     display: hidden;
     background-color: $white;
     border: none;
-    width: calc(18vw + 6px);
-    height: calc(18vw + 6px);
+    width: min(calc(18vw + 6px), 166px);
+    height: min(calc(18vw + 6px), 166px);
     fill: $black;
     top: 50%;
     right: 10%;
