@@ -28,7 +28,7 @@
     font-family: 'Montserrat', sans-serif;
 
     font-weight: 400;
-    font-size: calc(15.17vw + 4px);
+    font-size: 52px;
     letter-spacing: 0.06em;
     color: $black;
     text-transform: uppercase;
@@ -40,8 +40,12 @@
     z-index: 1;
     line-height: 1;
     @include desktop {
+      font-size: 120px;
+    }
+    @include desktop {
       top: 40%;
       left: 55%;
+      font-size: 160px;
     }
   }
 
@@ -73,6 +77,10 @@
     transform: translateX (50%, -10%);
     &:hover {
       cursor: pointer;
+    }
+    @include desktop-down {
+      margin-left: -20px;
+      z-index: -1;
     }
   }
 }
