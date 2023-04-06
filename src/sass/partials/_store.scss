@@ -48,8 +48,24 @@
 
 @include tablet-only {
   .store__header {
+    content: '';
+    display: table;
+    width: 100%;
     font-size: 44px;
     line-height: 1.23;
+  }
+  .line {
+    display: table-cell;
+    width: 100%;
+    padding-left: 8px;
+    border: none;
+  }
+  .line:after {
+    content: '';
+    border-top: 1px solid #000000;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
   }
   .store__list {
     gap: 32px;
@@ -68,6 +84,7 @@
     line-height: 1.2;
   }
 }
+
 @include desktop {
   .store {
     display: flex;
@@ -140,6 +157,7 @@
     line-height: 1.2;
   }
 }
+
 .modal {
   display: none;
   position: absolute;
@@ -153,13 +171,14 @@
   margin: 10px 35px;
 }
 .modal__button {
+  display: flex;
   margin: auto;
-  margin-bottom: 60px;
   padding: 8px 39.5px;
   background-color: $button;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.33;
+  align-items: center;
   border: 0;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
