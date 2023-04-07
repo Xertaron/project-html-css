@@ -34,6 +34,11 @@
   display: flex;
   gap: 14px;
 }
+.blog__picture {
+  max-width: 216px;
+  min-width: 136px;
+  height: auto;
+}
 .blog__slider-btns {
   display: flex;
   margin: 0 auto;
