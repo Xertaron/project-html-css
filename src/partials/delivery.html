@@ -1,34 +1,66 @@
 <body>
-    <section class="delivery container">
-        <h2 class="delivery__header">DELIVERY <hr class="line"/>
-        </h2>
-        <ul class="delivery__list">
-            <li class="delivery__item">
-                <div class="delivery__step">1
-                </div>
-                <div class="delivery__description">Choose your bouquet and make an order on website
-                </div>
-            </li>
-            <li class="delivery__item">
-                <div class="delivery__step">2
-                </div>
-                <div class="delivery__description">Wait for the call to clarify the details of the order. You can pay online or to the courier
-                </div>
-            </li>
-            <li class="delivery__item">
-                <div class="delivery__step">3
-                </div>
-                <div class="delivery__description">Wait for the delivery at the selected time or pick up the order from the store
-                </div>
-            </li>
-            <li class="delivery__item">
-                <dev class="delivery__step">4
-                </dev>
-                <div class="delivery__description">Make someone happy or enjoy yourself
-                </div>
-            </li>
-        </ul>
-        <img class="delivery__image" src="/src/images/delivery/image-delivery-mobile 2.jpg" alt="Flowers">
-    </section>
+  <section class="delivery container">
+    <h2 class="delivery__header">
+      DELIVERY
+      <hr class="line" />
+    </h2>
+    <ul class="delivery__list">
+      <li class="delivery__item">
+        <div class="delivery__step">
+          <span class="delivery__number">1</span>
+        </div>
+        <p class="delivery__description">Choose your bouquet and make an order on website</p>
+      </li>
+      <li class="delivery__item">
+        <div class="delivery__step">
+          <span class="delivery__number">2</span>
+        </div>
+        <p class="delivery__description">
+          Wait for the call to clarify the details of the order. You can pay online or to the
+          courier
+        </p>
+      </li>
+      <li class="delivery__item">
+        <div class="delivery__step">
+          <span class="delivery__number">3</span>
+        </div>
+        <p class="delivery__description">
+          Wait for the delivery at the selected time or pick up the order from the store
+        </p>
+      </li>
+      <li class="delivery__item">
+        <div class="delivery__step">
+          <span class="delivery__number">4</span>
+        </div>
+        <p class="delivery__description">Make someone happy or enjoy yourself</p>
+      </li>
+    </ul>
+    <picture class="delivery__image">
+      <source
+        srcset="
+          ./images/delivery/delivery-mobile@2x.jpg 640w,
+          ./images/delivery/delivery-mobile@3x.jpg 960w
+        "
+        media="(max-width: 767px)"
+        sizes="100vw"
+      />
+      <source
+        srcset="
+          ./images/delivery/delivery-tablet.jpg     768w,
+          ./images/delivery/delivery-tablet@2x.jpg 1536w
+        "
+        media="(min-width: 768px) and (max-width: 1279px)"
+        sizes="768px"
+      />
+      <source
+        srcset="
+          ./images/delivery/delivery-desktop.jpg    1280w,
+          ./images/delivery/delivery-desktop@2x.jpg 2560w
+        "
+        media="(min-width: 1280px)"
+        sizes="1280px"
+      />
+      <img src="./images/delivery/delivery-mobile.jpg" alt="Flowers" />
+    </picture>
+  </section>
 </body>
-

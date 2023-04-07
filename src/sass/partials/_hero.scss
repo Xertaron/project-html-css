@@ -1,0 +1,179 @@
+// Header makiety
+.hero {
+  background-color: $white;
+  background-position: center;
+  padding: 118px 0;
+
+  &__background {
+    border-radius: 100px;
+    max-width: 145px;
+    background-color: transparent;
+    @include mobile-up {
+      max-width: 390px;
+      width: 40vw;
+    }
+    @include desktop {
+      width: 100vw;
+      max-width: 1280px;
+      border-radius: 0;
+    }
+  }
+
+  &__content {
+    padding-top: 50px;
+    padding-bottom: 36px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include desktop {
+      justify-content: flex-start;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    color: $black;
+    text-transform: uppercase;
+    font-size: 15vw;
+    margin-bottom: 0;
+    text-align: center;
+    left: 50%;
+    top: 83%;
+    transform: translateX(-50%);
+    z-index: 1;
+    line-height: 1;
+    @include desktop {
+      top: 40%;
+      left: 55%;
+      font-size: 11vw;
+      color: $white;
+    }
+  }
+
+  &__subtitle {
+    margin-right: calc(5.8% + 7px);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $black;
+    @include tablet-only {
+      font-size: 24px;
+    }
+    @include desktop {
+      position: absolute;
+      top: 68%;
+      left: 15%;
+      color: $white;
+      font-size: 32px;
+    }
+  }
+
+  &__button {
+    // @extend %button;
+    margin-left: 2.68%;
+    display: hidden;
+    background-color: $white;
+    border: none;
+    fill: $black;
+    top: 50%;
+    right: 10%;
+    transform: translateX (50%, -10%);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.hero__button--mobile {
+  display: none;
+  @include tablet-down {
+    display: block;
+  }
+}
+.hero__button--tablet {
+  display: none;
+  @include tablet-only {
+    display: block;
+  }
+}
+.hero__button--desktop {
+  display: none;
+  @include desktop {
+    display: block;
+    position: absolute;
+    top: 64%;
+    right: 2%;
+    fill: $white;
+  }
+}
+.hero__icon--mobile {
+  width: 64px;
+  height: 76px;
+}
+.hero__icon--tablet {
+  width: 145px;
+  height: 150px;
+}
+.hero__icon--desktop {
+  width: 166px;
+  height: 166px;
+}
+.container {
+  margin-top: 0;
+}
+// @media screen and (min-width: 320px) and (max-width: 767px) {
+//   .hero {
+//     flex-basis: calc(100% - 60px);
+//   }
+// }
+
+// @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//   .hero {
+//     background-image: url('../images/hero/hero_underlay_320@2x.jpg');
+//   }
+// }
+
+// // MOBILE RESPONSIVE
+
+// @media screen and (min-width: 320px) and (max-width: 767px) {
+//   .hero {
+//     flex-basis: calc((100% - 60px));
+//   }
+// }
+
+// // TABLET RESPONSIVE
+
+// @media screen and (min-width: 768px) and (max-width: 1282px) {
+//   .hero__text-container {
+//     position: relative;
+//   }
+//   .hero__title {
+//     text-align: left;
+//   }
+//   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//     .hero {
+//       background-image: url('../images/hero/hero_underlay_768@2x.jpg');
+//     }
+//   }
+// }
+
+// // DESKTOP RESPONSIVE
+
+// @media screen and (min-width: 1283px) {
+//   .hero {
+//     padding: auto 0;
+//     position: absolute;
+//   }
+// }
+
+// @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//   .hero {
+//     background-image: url('../images/hero/hero_underlay@2x.jpg');
+//   }
+// }
