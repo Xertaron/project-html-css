@@ -90,8 +90,8 @@
 
 .hero__button--mobile {
   display: none;
-  width: 64px;
-  height: 76px;
+  width: 15vw;
+  height: auto;
   @include tablet-down {
     display: block;
   }
