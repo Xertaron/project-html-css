@@ -129,7 +129,7 @@
     transition: $transition;
     &:hover,
     &:focus {
-      background-color: $brand;
+      background-color: $hover;
     }
   }
 }
