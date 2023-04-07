@@ -1,25 +1,19 @@
 .delivery {
+  min-width: 320px;
   display: flex;
   flex-direction: column;
-
-  &__header {
-    content: '';
-    display: table;
-    width: 100%;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.21;
-    padding-bottom: 32px;
-  }
-  @include tablet-only {
-    font-size: 44px;
-    margin-bottom: 63px;
-  }
-  @include desktop {
-    font-size: 44px;
-    margin-bottom: 103px;
-  }
+  margin: 0 auto;
 }
+.delivery__header {
+  content: '';
+  display: table;
+  width: 100%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.21;
+  padding: 0px 16px;
+}
+
 .line {
   display: table-cell;
   width: 100%;
@@ -36,17 +30,13 @@
 .delivery__list {
   display: flex;
   flex-direction: column;
-}
-.delivery__list > :first-child {
-  margin-bottom: 19px;
-}
-.delivery__list > :last-child {
-  margin-bottom: 32px;
+  padding: 32px 24px 32px 16px;
 }
 .delivery__item {
   display: flex;
-  align-items: center;
-  margin-bottom: 25px;
+  align-items: stretch;
+  margin-bottom: 22px;
+  font-weight: 500;
 }
 
 .delivery__step {
@@ -56,48 +46,72 @@
   border-radius: 50%;
   min-width: 40px;
   height: 40px;
-  @include tablet-only {
-    width: 64px;
-    height: 64px;
-    // margin-right: 20px;
-  }
-  @include desktop {
-    margin-right: 56px;
-  }
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 8px;
+  font-weight: 500;
 }
 
 .delivery__number {
-  font-style: normal;
-  // font-weight: 400;
   font-size: 20px;
   line-height: 1.2;
-  @include tablet-only {
-    font-size: 26px;
-  }
+  font-weight: 500;
 }
 
 .delivery__description {
-  padding-left: 20px;
-  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
   font-size: 14px;
   line-height: 1.2;
-  @include desktop {
-    font-size: 32px;
-  }
+  font-weight: 500;
 }
 .delivery-image {
   width: 100%;
   height: auto;
-
-  @include tablet-only {
-    margin-top: 56px;
-    margin-bottom: 128px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .delivery {
+    max-width: 1280px;
   }
-  @include desktop {
-    margin-top: 82px;
-    margin-bottom: 128px;
+  .delivery__header {
+    font-size: 44px;
+    padding: 0px 24px;
+  }
+  .line {
+    padding-left: 16px;
+  }
+  .delivery__item {
+    margin-bottom: 32px;
+  }
+  .delivery__list {
+    padding: 60px 67px 40px 24px;
+  }
+  .delivery__step {
+    min-width: 64px;
+    height: 64px;
+    font-size: 26px;
+    margin-right: 20px;
+  }
+  .delivery__number {
+    font-size: 26px;
+  }
+  .delivery__description {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .delivery__description {
+    font-size: 32px;
+  }
+  .delivery__item {
+    margin-bottom: 35px;
+  }
+  .delivery__list {
+    padding: 91px 209px 69px 96px;
+  }
+  .delivery__step {
+    margin-right: 96px;
   }
 }
