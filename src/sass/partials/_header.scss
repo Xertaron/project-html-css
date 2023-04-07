@@ -3,8 +3,9 @@
   display: flex;
   flex-direction: row;
 
+  align-items: center;
   margin: 0 auto;
-  padding: 16px 0;
+  padding: 16px 16px 16px 0;
 
   @include tablet-up {
     margin: 0 auto 100px auto;
@@ -14,35 +15,85 @@
 }
 
 .header__logo {
-  position: absolute;
-  left: 16px;
-  top: 16px;
   display: block;
   fill: black;
+
   @include tablet-up {
     width: 72px;
     height: 57px;
-    left: 24px;
-    top: 24px;
+    transition: $transition;
+    &:hover,
+    &:focus {
+      stroke: rgba(232, 111, 84, 0.5);
+      width: 79px;
+      height: 64px;
+      margin: -3.5px;
+    }
   }
   @include desktop {
-    top: 28px;
+    top: 24px;
+    right: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__phone {
+    transition: $transition;
+    &:hover,
+    &:focus {
+      height: 33px;
+      width: 33px;
+      margin: -2.5px;
+      animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+    }
+    @keyframes trambling-animation {
+      0%,
+      50%,
+      100% {
+        transform: rotate(0deg);
+      }
+      10%,
+      30% {
+        transform: rotate(-10deg);
+      }
+      20%,
+      40% {
+        transform: rotate(10deg);
+      }
+    }
+  }
+}
+.header__logo-link,
+.header__phone-link {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.header__logo-link {
+  margin-right: auto;
+  padding-left: 16px;
+  @include tablet-up {
+    padding-left: 24px;
   }
 }
 
 .header__phone-link {
-  position: absolute;
-  right: 54px;
-  top: 18px;
+  margin-left: auto;
+  margin-right: 17px;
+  display: block;
+  z-index: 998;
   @include tablet-up {
-    top: 40px;
-    right: 24px;
+    padding-right: 25px;
+  }
+  @include desktop {
+    padding-right: 28px;
   }
 }
 
 .header__phone {
   display: block;
   fill: black;
+  cursor: pointer;
   @include tablet-up {
     width: 24px;
     height: 24px;
@@ -54,16 +105,12 @@
 }
 
 .header__burger {
-  position: absolute;
-  right: 16px;
-  top: 16px;
   display: block;
   fill: black;
+  z-index: 998;
 }
 
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,12 +143,14 @@
   padding: 124px 40px;
   background-color: $button;
   z-index: 999;
-
-  transform: translateX(100%);
+  transform: translateX(200%);
   transition: transform 250ms ease-in-out;
+  @include tablet-down {
+    visibility: hidden;
+  }
+
   @include tablet-up {
     position: relative;
-    display: block;
     transform: none;
     background: transparent;
     width: 100%;
@@ -113,6 +162,7 @@
 
 .menu-container.is-open {
   transform: translateX(0);
+  visibility: visible;
 }
 
 .menu-container .menu-toggle {
@@ -130,7 +180,7 @@
   @include tablet-up {
     display: flex;
     flex-direction: row;
-    padding-left: calc(35% - 96px);
+    margin-left: calc(35.35% - 144px);
   }
 }
 
@@ -138,8 +188,10 @@
   @include tablet-up {
     padding: 0;
     margin: 0;
-    margin-right: calc(4.6875% - 12px);
   }
+}
+.mobile-menu__item:not(:last-child) {
+  margin-right: calc(4.6875% - 4px);
 }
 
 .mobile-menu__link {
