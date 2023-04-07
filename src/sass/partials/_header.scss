@@ -20,7 +20,7 @@
 
 .header__logo {
   display: block;
-  fill: black;
+  fill: $black;
 
   @include tablet-up {
     width: 72px;
@@ -28,10 +28,11 @@
     transition: $transition;
     &:hover,
     &:focus {
-      stroke: rgba(232, 111, 84, 0.5);
+      stroke: $button;
       width: 79px;
       height: 64px;
       margin: -3.5px;
+      fill: $button;
     }
   }
   @include desktop {
@@ -94,7 +95,7 @@
 
 .header__phone {
   display: block;
-  fill: black;
+  fill: $black;
   cursor: pointer;
   margin-right: 14px;
   @include tablet-up {
@@ -113,7 +114,7 @@
 
 .header__burger {
   display: block;
-  fill: black;
+  fill: $black;
   z-index: 998;
 }
 
