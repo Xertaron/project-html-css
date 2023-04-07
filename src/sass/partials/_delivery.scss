@@ -1,44 +1,16 @@
 .delivery {
   display: flex;
   flex-direction: column;
+}
 
-  &__header {
-    content: '';
-    display: table;
-    width: 100%;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.21;
-    padding-bottom: 32px;
-  }
-<<<<<<< HEAD
-  @include tablet-only {
-    font-size: 44px;
-    margin-bottom: 63px;
-=======
-  &__image {
-    margin: 26px -16px 0 -16px
-  }
-  &__list {
-    list-style: none;
-    counter-reset: li-counter;
-    padding-left: 0;
-    margin-bottom: 26px;
-
-    @media screen and (min-width: 768px) {
-      margin-bottom: 40px;
-    }
-
-    @media (min-width: 1280px) {
-      margin-bottom: 60px;
-      padding: 0 80px;
-    }
->>>>>>> 61774d9 (delivery fx)
-  }
-  @include desktop {
-    font-size: 44px;
-    margin-bottom: 103px;
-  }
+.delivery__header {
+  content: '';
+  display: table;
+  width: 100%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.21;
+  padding-bottom: 32px;
 }
 .line {
   display: table-cell;
@@ -56,6 +28,19 @@
 .delivery__list {
   display: flex;
   flex-direction: column;
+  list-style: none;
+  counter-reset: li-counter;
+  padding-left: 0;
+  margin-bottom: 26px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-bottom: 60px;
+    padding: 0 80px;
+  }
 }
 .delivery__list > :first-child {
   margin-bottom: 19px;
@@ -111,6 +96,7 @@
 .delivery-image {
   width: 100%;
   height: auto;
+  margin: 26px -16px 0 -16px;
 
   @include tablet-only {
     margin-top: 56px;
