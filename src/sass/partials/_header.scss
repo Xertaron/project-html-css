@@ -5,11 +5,11 @@
 
   align-items: center;
   margin: 0 auto;
-  padding: 16px 16px 16px 0;
+  padding: 16px 16px 16px 16px;
 
   @include tablet-up {
     margin: 0 auto 100px auto;
-    padding: 40px 0;
+    padding: 40px 24px;
     max-width: 1280px;
   }
 }
@@ -71,10 +71,6 @@
 
 .header__logo-link {
   margin-right: auto;
-  padding-left: 16px;
-  @include tablet-up {
-    padding-left: 24px;
-  }
 }
 
 .header__phone-link {
