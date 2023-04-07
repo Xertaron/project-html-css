@@ -8,6 +8,9 @@
     line-height: 1.21;
     padding: 0px 16px 32px 16px;
   }
+  &__image {
+    margin: 26px -16px 0 -16px
+  }
   &__list {
     list-style: none;
     counter-reset: li-counter;
