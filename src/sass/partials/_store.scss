@@ -57,7 +57,7 @@
   font-size: 12px;
 }
 .modal__button {
-  @include button-s;
+  @include button-m;
   display: flex;
   margin: auto;
   padding: 8px 0;
@@ -121,7 +121,7 @@
     margin-bottom: 8px;
   }
   .modal__button {
-    @include button-m;
+    @include button-l;
     font-size: 28px;
   }
 }
