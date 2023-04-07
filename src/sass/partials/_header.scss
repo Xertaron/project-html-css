@@ -13,7 +13,7 @@
     max-width: 1280px;
   }
   @include desktop {
-    padding: 28px 24px;
+    padding: 28px 0 0;
     margin: 0 auto -113px;
   }
 }
@@ -51,11 +51,6 @@
       width: 33px;
       margin: -2.5px;
       animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
-    }
-    @include desktop {
-      position: relative;
-      z-index: 1;
-      fill: $white;
     }
     @keyframes trambling-animation {
       0%,
@@ -111,6 +106,9 @@
   @include desktop {
     width: 28px;
     height: 28px;
+    position: relative;
+    z-index: 1;
+    fill: $white;
   }
 }
 
