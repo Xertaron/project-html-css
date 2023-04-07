@@ -35,35 +35,29 @@
         <p class="delivery__description">Make someone happy or enjoy yourself</p>
       </li>
     </ul>
-    <picture>
+    <picture class="delivery__image">
       <source
-        media="(min-width: 360px) and (max-width: 785px)"
-        srcset="./images/delivery/image-delivery-mobile.jpg"
-        srcset="
-          ./images/delivery/image-delivery-mobile.jpg    1x,
-          ./images/delivery/image-delivery-mobile@2x.jpg 2x
-        "
-        type="image/jpeg"
+        srcset="./images/delivery/delivery-mobile@2x.jpg 640w"
+        media="(max-width: 767px)"
+        sizes="100vw"
       />
       <source
-        media="(min-width: 768px) and (max-width: 1199px)"
-        srcset="./images/delivery/image-delivery-tablet.jpg"
         srcset="
-          ./images/delivery/image-delivery-tablet.jpg    1x,
-          ./images/delivery/image-delivery-tablet@2x.jpg 2x
+          ./images/delivery/delivery-tablet.jpg     768w,
+          ./images/delivery/delivery-tablet@2x.jpg 1536w
         "
-        type="image/jpeg"
+        media="(min-width: 768px) and (max-width: 1279px)"
+        sizes="768px"
       />
       <source
-        media="(min-width: 1200px)"
-        srcset="./images/delivery/image-delivery-desktop.jpg"
         srcset="
-          ./images/delivery/image-delivery-desktop.jpg    1x,
-          ./images/delivery/image-delivery-desktop@2x.jpg 2x
+          ./images/delivery/delivery-desktop.jpg    1280w,
+          ./images/delivery/delivery-desktop@2x.jpg 2560w
         "
-        type="image/jpeg"
+        media="(min-width: 1280px)"
+        sizes="1280px"
       />
-      <img class="delivery-image" src="./images/delivery/image-delivery-mobile.jpg" alt="Flowers" />
+      <img src="./images/delivery/delivery-mobile.jpg" alt="Flowers" />
     </picture>
   </section>
 </body>

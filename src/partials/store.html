@@ -25,14 +25,12 @@
           srcset="./images/store/bouquet3_tablet.jpg 1x, ./images/store/bouquet3@2x_tablet.jpg 2x"
           type="image/jpeg"
         />
-
         <img
           class="store-picture"
           src="./images/store/bouquet3_mobile.jpg"
           alt="bouquet compliments from $15"
         />
       </picture>
-
       <div class="store__product">
         <h3 class="store__product--name">
           compliments
@@ -41,7 +39,6 @@
         <p class="store__product--price">from $15</p>
       </div>
     </li>
-
     <li class="store-list__item">
       <picture class="store-picture">
         <source
@@ -149,16 +146,27 @@
     </li>
   </ul>
 
-  <div class="store__text-container">
-    <!--BUTTON BLOCK-->
-    <button class="modal__button" type="button" data-modal-open4>
-      <p class="modal__title">Order flowers</p>
-    </button>
+  <!--BUTTON BLOCK-->
+  <!-- <button type="button" class="hero__button" data-modal-open>
+    <svg class="hero-button--mobile">
+      <use href="./images/icons/sprite.svg#icon-shop-now-mobile"></use>
+    </svg>
+  </button>
+  <button type="button" class="hero__button" data-modal-open>
+    <svg class="hero-button--tablet">
+      <use href="./images/icons/sprite.svg#icon-shop-now-tablet"></use>
+    </svg>
+  </button>
+  <button type="button" class="hero__button" data-modal-open>
+    <svg class="hero-button--desktop">
+      <use href="./images/icons/sprite.svg#icon-shop-now-desktop"></use>
+    </svg>
+  </button> -->
+ </section>
+  <!--END BUTTON BLOCK-->
 
-    <!--END BUTTON BLOCK-->
-  </div>
-</section>
 <!--END HERO BLOCK-->
+
 <!--Modal window - MODAL BLOCK-->
 <section class="backdrop is-hidden" data-modal>
   <div class="modal">
@@ -192,6 +200,6 @@
   </div>
 </section>
 
-<script defer src="js/mobile-menu-alt.js"></script>
+<script defer src="./js/mobile-menu-alt.js"></script>
 <script src="./js/modal.js"></script>
 <!--END MODAL BLOCK-->
