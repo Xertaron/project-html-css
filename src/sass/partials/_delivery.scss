@@ -11,9 +11,29 @@
     line-height: 1.21;
     padding-bottom: 32px;
   }
+<<<<<<< HEAD
   @include tablet-only {
     font-size: 44px;
     margin-bottom: 63px;
+=======
+  &__image {
+    margin: 26px -16px 0 -16px
+  }
+  &__list {
+    list-style: none;
+    counter-reset: li-counter;
+    padding-left: 0;
+    margin-bottom: 26px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: 1280px) {
+      margin-bottom: 60px;
+      padding: 0 80px;
+    }
+>>>>>>> 61774d9 (delivery fx)
   }
   @include desktop {
     font-size: 44px;
