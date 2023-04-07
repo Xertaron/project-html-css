@@ -1,0 +1,100 @@
+//Kolory
+$button: rgba(232, 111, 84, 1);
+$button-invalid: rgba(232, 111, 84, 0.4);
+$hover: rgba(226, 91, 65, 1);
+$black: rgba(0, 0, 0, 1);
+$white: rgba(255, 255, 255, 1);
+$vaild: rgba(60, 188, 129, 1);
+$invalid: rgba(231, 74, 59, 1);
+$input: rgba(215, 215, 215, 1);
+$input-hover: rgba(17, 17, 17, 0.7);
+$price: rgba(0, 0, 0, 0.6);
+$sendButton: rgba(232, 111, 84, 0.4);
+$support: rgba(117, 117, 117, 1);
+
+//Czcionki
+$small: 14px;
+$medium: 18px;
+$large: 24px;
+
+//Przejścia
+$transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+//Mixiny//
+
+//Media Query
+
+@mixin mobile-up {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+@mixin mobile-only {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin tablet-up {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin tablet-down {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin tablet-only {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    @content;
+  }
+}
+@mixin desktop-down {
+  @media screen and (max-width: 1279px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: 1280px) {
+    @content;
+  }
+}
+
+//Przyciski
+
+@mixin button-l {
+  width: 280px;
+  height: 64px;
+  border-radius: 38px;
+  background-color: $brand;
+}
+@mixin button-m {
+  width: 208px;
+  height: 44px;
+  border-radius: 38px;
+  background-color: $brand;
+}
+@mixin button-s {
+  width: 170px;
+  height: 40px;
+  border-radius: 38px;
+  background-color: $brand;
+}
+// Przycisk hero
+@mixin button {
+  background-color: transparent;
+  box-shadow: transparent;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $black;
+  fill: $black;
+  cursor: pointer;
+  border-style: line $support;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

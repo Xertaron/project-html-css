@@ -4,4 +4,52 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
-@import './example';
+@import './variables';
+@import './partials/header';
+@import './partials/modal';
+@import './partials/hero';
+@import './partials/about';
+@import './partials/delivery';
+@import './partials/store';
+@import './partials/blog';
+@import './partials/footer';
+
+* {
+  box-sizing: border-box;
+}
+
+header,
+body,
+section {
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+  font-family: 'Inter', sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.container {
+  @include tablet-down {
+    margin: 60px 16px;
+  }
+  @include tablet-up {
+    margin: 100px auto;
+    padding: 0 24px;
+    max-width: 1280px;
+  }
+}
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+  color: $hover;
+  transition: $transition;
+}
