@@ -38,7 +38,7 @@
   margin-bottom: 32px;
 }
 .store-list__item {
-  flex-basis: calc((100% - 16px) / 2);
+  width: calc(38%+26px);
 }
 .store__product {
   text-align: left;
