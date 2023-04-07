@@ -33,6 +33,7 @@
 .store-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
   margin-bottom: 32px;
 }
@@ -76,6 +77,7 @@
   &:focus {
     background-color: $hover;
     color: $white;
+    scale: 1.2;
   }
 }
 
