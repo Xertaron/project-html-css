@@ -21,12 +21,47 @@
   @include tablet-up {
     width: 72px;
     height: 57px;
+    transition: $transition;
+    &:hover,
+    &:focus {
+      stroke: rgba(232, 111, 84, 0.5);
+      width: 79px;
+      height: 64px;
+      margin: -3.5px;
+    }
   }
   @include desktop {
-    top: 28px;
+    top: 24px;
+    right: 24px;
   }
 }
-
+@media screen and (min-width: 768px) {
+  .header__phone {
+    transition: $transition;
+    &:hover,
+    &:focus {
+      height: 33px;
+      width: 33px;
+      margin: -2.5px;
+      animation: 1.2s ease-in-out 0s normal none infinite running trambling-animation;
+    }
+    @keyframes trambling-animation {
+      0%,
+      50%,
+      100% {
+        transform: rotate(0deg);
+      }
+      10%,
+      30% {
+        transform: rotate(-10deg);
+      }
+      20%,
+      40% {
+        transform: rotate(10deg);
+      }
+    }
+  }
+}
 .header__logo-link,
 .header__phone-link {
   position: relative;
@@ -47,7 +82,7 @@
   margin-right: 17px;
   display: block;
   z-index: 998;
-  include tablet-up {
+  @include tablet-up {
     padding-right: 25px;
   }
   @include desktop {
@@ -116,7 +151,6 @@
 
   @include tablet-up {
     position: relative;
-    display: block;
     transform: none;
     background: transparent;
     width: 100%;
