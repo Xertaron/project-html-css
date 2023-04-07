@@ -6,6 +6,7 @@
 // Style dla pliku z przykładem HTML fragmentu
 @import './variables';
 @import './partials/header';
+@import './partials/modal';
 @import './partials/hero';
 @import './partials/about';
 @import './partials/delivery';
@@ -17,17 +18,30 @@
   box-sizing: border-box;
 }
 
+<<<<<<< Updated upstream
 body {
   font-family: 'Montserrat', sans-serif;
 }
 
 ul {
-  list-style: none;
+=======
+header,
+body,
+section {
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
 }
 
 footer {
   font-family: 'Inter', sans-serif;
 }
+
+ul,
+ol {
+>>>>>>> Stashed changes
+  list-style: none;
+}
+
 .container {
   @include tablet-down {
     margin: 60px 16px;
