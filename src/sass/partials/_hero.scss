@@ -28,7 +28,7 @@
   justify-content: center;
 
   @include desktop {
-    max-width: 1280px;
+    display: block;
   }
 }
 
