@@ -56,6 +56,31 @@
   font-weight: 600;
   font-size: 12px;
 }
+.modal__button {
+  display: flex;
+  margin: auto;
+  padding: 8px 0;
+  background-color: $button;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  color: $white;
+  transition: $transition;
+  border-radius: 34px;
+  width: 170px;
+  height: 40px;
+  &:hover,
+  &:focus {
+    background-color: $hover;
+    color: $white;
+  }
+}
 
 @include tablet-only {
   .store__header {
@@ -97,6 +122,10 @@
     font-size: 24px;
     line-height: 1.2;
     margin-bottom: 8px;
+  }
+  .modal__button {
+    @include button-l;
+    font-size: 28px;
   }
 }
 
@@ -145,6 +174,10 @@
     font-size: 28px;
     line-height: 1.2;
   }
+  .modal__button {
+    @include button-l;
+    font-size: 28px;
+  }
 }
 
 // .modal {
@@ -152,39 +185,16 @@
 //   position: absolute;
 //   margin-top: 32px;
 // }
-.modal__title {
-  font-weight: 500;
-  line-height: 1.2;
-  color: $white;
-  margin: auto;
-  @include tablet-up {
-    font-size: 20px;
-  }
-}
-.modal__button {
-  display: flex;
-  margin: auto;
-  padding: 8px 0;
-  background-color: $button;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.33;
-  align-items: center;
-  border: 0;
-  letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  color: $white;
-  transition: $transition;
-  border-radius: 34px;
-  width: 170px;
-  height: 40px;
-  &:hover,
-  &:focus {
-    background-color: $hover;
-    color: $white;
-  }
-}
+// .modal__title {
+//   font-weight: 500;
+//   line-height: 1.2;
+//   color: $white;
+//   margin: auto;
+//   @include tablet-up {
+//     font-size: 20px;
+//   }
+// }
+
 // .modal__title-contact {
 //   font-weight: 600;
 //   font-size: 32px;
