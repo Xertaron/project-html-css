@@ -16,6 +16,7 @@
   }
   @include desktop {
     width: 100vw;
+    max-width: none;
     border-radius: 0;
   }
 }
