@@ -33,7 +33,22 @@
   text-align: center;
   margin-bottom: 24px;
 }
-
+.blog__btn-left {
+  cursor: pointer;
+  transition: $transition;
+  &:hover,
+  &:focus {
+    stroke: $hover;
+  }
+}
+.blog__btn-right {
+  cursor: pointer;
+  transition: $transition;
+  &:hover,
+  &:focus {
+    stroke: $hover;
+  }
+}
 @media screen and (max-width: 1279px) {
   .blog__img-desktop {
     display: none;
@@ -98,12 +113,7 @@
   .blog__slider-btns {
     margin-bottom: 18px;
   }
-  .blog__btn-left {
-    cursor: pointer;
-  }
-  .blog__btn-right {
-    cursor: pointer;
-  }
+
   .blog__description {
     font-size: 32px;
     font-weight: 500;
