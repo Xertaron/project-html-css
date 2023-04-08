@@ -193,6 +193,7 @@
 }
 
 .mobile-menu__item {
+  display: inline;
   @include tablet-up {
     padding: 0;
     margin: 0;
