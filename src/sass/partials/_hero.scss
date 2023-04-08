@@ -99,6 +99,11 @@
     filter: invert(75%) sepia(42%) saturate(6520%) hue-rotate(325deg) brightness(95%) contrast(90%);
     transform: rotate(360deg) scale(1.2);
   }
+  @include desktop {
+    position: absolute;
+    top: 64%;
+    right: 14%;
+  }
 }
 
 .hero__button--mobile {
