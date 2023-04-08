@@ -75,7 +75,7 @@
 }
 
 .hero__button {
-  background-color: $white;
+  background: none;
   border: none;
   fill: $black;
   &:hover {
@@ -96,7 +96,6 @@
     }
   }
   @include desktop {
-    background: none;
     position: absolute;
     top: 60%;
     right: 15%;
