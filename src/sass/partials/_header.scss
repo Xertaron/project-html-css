@@ -152,9 +152,6 @@
   z-index: 1000;
   transform: translateX(200%);
   transition: transform 250ms ease-in-out;
-  @include tablet-down {
-    visibility: hidden;
-  }
 
   @include tablet-up {
     position: relative;
@@ -169,7 +166,6 @@
 
 .menu-container.is-open {
   transform: translateX(0);
-  visibility: visible;
 }
 
 .menu-container .menu-toggle {
