@@ -209,7 +209,6 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 1.2;
-  font-family: 'Montserrat';
 
   @include tablet-up {
     margin: 0;
@@ -223,4 +222,9 @@
 .mobile-menu__link--is-active {
   color: $white;
   margin-bottom: 36px;
+}
+.js-menu-container {
+  @include tablet-up {
+    display: none;
+  }
 }
