@@ -11,7 +11,6 @@
   min-width: 145px;
   background-color: transparent;
   @include mobile-up {
-    max-width: 390px;
     width: 40vw;
   }
   @include desktop {
@@ -92,23 +91,23 @@
 .hero__button--mobile {
   display: none;
   width: 15vw;
-  height: auto;
+  height: 15vw;
   @include tablet-down {
     display: block;
   }
 }
 .hero__button--tablet {
   display: none;
-  width: 145px;
-  height: 150px;
+  width: 15vw;
+  height: 15vw;
   @include tablet-only {
     display: block;
   }
 }
 .hero__button--desktop {
   display: none;
-  width: 166px;
-  height: 166px;
+  width: 15vw;
+  height: 15vw;
 
   @include desktop {
     display: block;

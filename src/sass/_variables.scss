@@ -66,19 +66,19 @@ $transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   width: 280px;
   height: 64px;
   border-radius: 38px;
-  background-color: $brand;
+  background-color: $button;
 }
 @mixin button-m {
   width: 208px;
   height: 44px;
   border-radius: 38px;
-  background-color: $brand;
+  background-color: $button;
 }
 @mixin button-s {
   width: 170px;
   height: 40px;
   border-radius: 38px;
-  background-color: $brand;
+  background-color: $button;
 }
 // Przycisk hero
 @mixin button {
@@ -93,7 +93,6 @@ $transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   fill: $black;
   cursor: pointer;
   border-style: line $support;
-
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
