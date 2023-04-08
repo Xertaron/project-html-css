@@ -223,8 +223,3 @@
   color: $white;
   margin-bottom: 36px;
 }
-.js-menu-container {
-  @include tablet-up {
-    display: none;
-  }
-}
