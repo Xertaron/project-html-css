@@ -98,7 +98,7 @@
   @include desktop {
     background: none;
     position: absolute;
-    top: 15%;
+    top: 60%;
     right: 15%;
     width: 300px;
     height: 300px;
@@ -129,8 +129,8 @@
   @include desktop {
     display: block;
     position: absolute;
-    top: 60%;
-    right: 9%;
+    top: 15%;
+    right: 15%;
     fill: $white;
   }
 }
