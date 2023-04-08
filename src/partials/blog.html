@@ -1,13 +1,13 @@
-<section id="blog">
-  <div class="blog">
+<section class="blog">
     <h2 class="blog__header">
       BLOG
       <hr class="line" />
     </h2>
+
     <div class="blog__box">
-      <ul class="blog__gallery">
-        <li>
-          <picture>
+      <ul class="blog__list">
+        <li class="blog__item">
+          <picture class="blog-picture">
             <source
               media="(min-width: 320px) and (max-width: 767px)"
               srcset="./images/blog/blog-mobile.jpg"
@@ -26,11 +26,11 @@
               srcset="./images/blog/blog-desktop.jpg 1x, ./images/blog/blog-desktop@2x.jpg 2x"
               type="image/jpeg"
             />
-            <img src="./images/blog/blog-mobile.jpg" alt="John Doe" />
+            <img src="./images/blog/blog-mobile.jpg" alt="flowers" />
           </picture>
         </li>
-        <li>
-          <picture>
+        <li class="blog-list__item">
+          <picture class="blog-picture">
             <source
               media="(min-width: 320px) and (max-width: 767px)"
               srcset="./images/blog/blog3-mobile.jpg"
@@ -49,11 +49,11 @@
               srcset="./images/blog/blog3-desktop.jpg 1x, ./images/blog/blog3-desktop@2x.jpg 2x"
               type="image/jpeg"
             />
-            <img src="./images/blog/blog3-mobile.jpg" alt="John Doe" />
+            <img src="./images/blog/blog3-mobile.jpg" alt="flowers" />
           </picture>
         </li>
-        <li class="blog__img-desktop">
-          <picture>
+        <li class="blog-list__item">
+          <picture class="blog-picture">
             <source
               media="(min-width: 320px) and (max-width: 767px)"
               srcset="./images/blog/blog2-mobile.jpg"
@@ -72,7 +72,7 @@
               srcset="./images/blog/blog2-desktop.jpg 1x, ./images/blog/blog2-desktop@2x.jpg 2x"
               type="image/jpeg"
             />
-            <img src="./images/blog/blog2-mobile.jpg" alt="John Doe" />
+            <img src="./images/blog/blog2-mobile.jpg" alt="flowers" />
           </picture>
         </li>
       </ul>
@@ -89,7 +89,7 @@
     <button class="blog__btn-sub" type="button" data-modal-open>Subscribe</button>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal__close-button" data-modal-close>&#x2715;</button>
+        <button type="button" class="modal__close-button" data-modal-close></button>
         <div class="modal__img">
           <picture>
             <source
@@ -130,5 +130,5 @@
         </div>
       </div>
     </div>
-  </div>
+  
 </section>

@@ -1,7 +1,7 @@
 <!--Header makiety - HERO BLOCK-->
 <section>
   <!-- <div class="container"> -->
-  <div class="hero__content container">
+  <div class="hero__content">
     <h1 class="hero__title">ANEMONĒ</h1>
     <p1 class="hero__subtitle"
       >flower <br />
@@ -26,17 +26,17 @@
     </picture>
     <!--BUTTON BLOCK-->
     <button type="button" class="hero__button" data-modal-open1>
-      <svg class="hero__button--mobile" width="64px" height="76px">
+      <svg class="hero__button--mobile" width="15vw" height="auto">
         <use class="hero__icon--mobile" href="./images/icons/sprite.svg#icon-shop-now-mobile"></use>
       </svg>
     </button>
     <button type="button" class="hero__button" data-modal-open2>
-      <svg class="hero__button--tablet" width="145px" height="150px">
+      <svg class="hero__button--tablet" width="15vw" height="auto">
         <use class="hero__icon--tablet" href="./images/icons/sprite.svg#icon-shop-now-tablet"></use>
       </svg>
     </button>
     <button type="button" class="hero__button" data-modal-open3>
-      <svg class="hero__button--desktop" width="166px" height="166px">
+      <svg class="hero__button--desktop" width="15vw" height="auto">
         <use
           class="hero__icon--desktop"
           href="./images/icons/sprite.svg#icon-shop-now-desktop"
@@ -50,38 +50,5 @@
 <!--END HERO BLOCK-->
 
 <!--Modal window - MODAL BLOCK-->
-<section class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button class="modal__close-button" data-modal-close>
-      <svg width="18" height="18">
-        <use href="./images/icons/sprite.svg#icon-close-btn"></use>
-      </svg>
-    </button>
-    <h2 class="modal__title">Contact us</h2>
-    <p1
-      >If you have any additional questions or you want to clarify something before you make an
-      order please fill in your contact details. We will call you back.</p1
-    >
-    <form class="modal__form">
-      <div class="modal__form-item">
-        <label class="modal__form-label">
-          Name
-          <input type="text" name="imie" class="modal__form-input" required />
-        </label>
-      </div>
-      <div class="modal__form-item">
-        <label class="modal__form-label">
-          E-mail
-          <input type="email" name="email" class="modal__form-input" required />
-        </label>
-      </div>
-      <div>
-        <button type="submit" class="modal__button">Send</button>
-      </div>
-    </form>
-  </div>
-</section>
 
-<script defer src="./js/mobile-menu-alt.js"></script>
-<script src="./js/modal.js"></script>
 <!--END MODAL BLOCK-->
