@@ -1,6 +1,6 @@
 // Okno modalne
 .backdrop {
-  background: rgba(0, 0, 0, 0.2);
+  background: $black;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,150 +16,188 @@
   z-index: 100;
   transition-delay: 500ms;
 }
-
+.modal-contact {
+  width: 272px;
+  min-height: 357px;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0 16px;
+}
 .modal {
-  border: 2px solid red;
-  position: absolute;
-  width: calc(100vw - 30px);
-  max-width: 380px;
-  min-height: 511px;
-  top: 50%;
-  left: 50%;
-  padding: 30px;
-
-  background: $white;
+  display: flex;
+  flex-direction: column;
+  border: none;
   box-shadow: 0px 1px 3px rgba(215, 215, 215, 1), 0px 1px 1px rgba(215, 215, 215, 1),
     0px 2px 1px rgba(215, 215, 215, 1);
-  border-radius: 8px;
-
+  top: 50%;
+  left: 50%;
+  position: absolute;
   transform: translate(-50%, -50%) scale(1);
   transition-property: transform;
   transition-duration: 1s;
   transition-timing-function: ease;
-
-  .backdrop.is-hidden & {
+}
+  .backdrop .is-hidden {
     transform: translate(-50%, -50%) scale(0.25);
   }
 
-  &__close-button {
-    border: 3px solid green;
+  .modal__close-button {
+    stroke: $black;
+    background-color: #0000;
+    border: 0;
+    padding: 0;
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 14px;
+    right: 14px;
     display: flex;
     justify-content: flex-end;
-    border-radius: 50%;
-    padding: 5px;
-    height: 30px;
+
     background-color: $white;
-    border: 1px solid rgba(215, 215, 215, 1);
+    text-transform: none;
     cursor: pointer;
   }
 
-  &__close-button:hover,
-  &__close-button:focus {
-    background-color: $sendButton;
-    fill: $sendButton;
-  }
-
-  &__title {
-    border: 2px solid pink;
+  .modal__title {
+    margin-top: 28px;
+    font-weight: 600;
     font-size: 20px;
-    line-height: 1.5;
+    color: $black;
+    line-height: 1.2;
     text-decoration-style: bold;
-    font-weight: 400px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    margin-bottom: 12px;
+    text-align: left;
+    margin-top: 28px;
   }
-
-  &__form {
-    border: 3px solid blue;
+  .modal__txtinfo {
+    color: #5c5c5c;
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-bottom: 18px;
+  }
+  .modal__form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    
   }
-
-  &__form-label {
-    border: 2px solid violet;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
+  .modal__txt {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.2;
     color: $support;
-
+  }
+  .modal__form-label {
     display: flex;
     flex-direction: column;
     position: relative;
-    gap: 4px;
+    gap: 8px;
   }
-
-  &__form-input {
-    border: 1px solid rgba(215, 215, 215, 1);
+  .modal__form-input {
+    width: 100%;
+    height: 35px;
+    color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #d7d7d7;
     border-radius: 4px;
-    height: 40px;
-    padding-left: 41px;
+    outline: none;
+    margin-bottom: 14px;
+    padding-left: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.25;
   }
-
-  &__form-input:hover,
-  &__form-input:focus {
+  .modal__form-input:hover,
+  .modal__form-input:focus {
     border-color: rgba(215, 215, 215, 1);
     outline: none;
   }
-
-  &__form-svg {
-    position: absolute;
-    top: 28px;
-    left: 14px;
-  }
-
-  &__form-item:hover,
-  &__form-item:focus-within {
+  .modal__form-label:hover,
+  .modal__form-label:focus-within {
     fill: $sendButton;
   }
+  .modal::placeholder {
+    color: currentColor;
+  }
 
-  &__button {
-    padding: 10px 76px;
-    margin: 20px auto 0;
+  .modal__button {
+    padding: 10px 102px 10px 101px;
     display: block;
-    fill: $sendButton;
+    background: $sendButton;;
+    color: white;
+    border-radius: 8px;
+    font-weight: 500;
+    line-height: 24px;
+    border: 0;
+    outline: none;
+    margin-top: 24px;
+    margin-bottom: 28px;
   }
-
-  &__button:hover {
+  .modal__button:hover {
     background-color: $sendButton;
     fill: $sendButton;
     color: $white;
   }
+
+
+@include tablet-only {
+  .modal-contact {
+    width: 480px;
+    min-height: 511px;
+    padding: 0 32px;
+    gap: 24px;
+  }
+  .modal_title {
+    margin-top: 48px;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  .modal__txt {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .modal__form-input {
+    margin-bottom: 24px;
+    width: 100%;
+    height: 49px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .modal__button {
+    margin-top: 14px;
+  }
 }
 
+/*
 // DESKTOP RESPONSIVE
 
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
+  }
 
-    &__title {
+  .modal__title {
       line-height: 1.15;
-    }
+  }
 
-    &__form-regulations {
+  .modal__form-regulations {
       font-size: 14px;
       line-height: 1.71;
-    }
-
-    &__form-regulations-text {
-      padding-left: 39px;
-    }
-
-    &__form-regulations input[type='checkbox'] {
-      left: 15px;
-    }
-
-    &__form-checkbox-svg {
-      left: 15px;
-    }
   }
-}
+
+  .modal__form-regulations-text {
+      padding-left: 39px;
+  }
+
+  .modal__form-regulations input[type='checkbox'] {
+      left: 15px;
+  }
+
+  .modal__form-checkbox-svg {
+      left: 15px;
+  }
+  
+
 
 // TABLET & DESKTOP RESPONSIVE
 
@@ -171,3 +209,67 @@
     top: 50%;
   }
 }
+}
+*/
+
+// MODAL THANK YOU
+
+.modal-thx {
+  width: 272px;
+  min-height: 357px;
+  background-color: $white;
+}
+
+.modal-thx__img {
+    display: block;
+    margin-top: 44px;
+  }
+
+.modal-thx__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.modal-thx__title {
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    text-align: center;
+    color: $black;
+  }
+
+.modal-thx__txtinfo {
+    margin-top: 14px;
+    width: 240px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    color: #5c5c5c;
+    text-align: center;
+  }
+
+  @include tablet-only {
+    .modal-thx {
+      width: 480px;
+      min-height: 505px;
+    }
+  
+    .modal-thx__img {
+        margin-top: px;
+        width: 266px;
+        height: 202px;
+      }
+  
+    .modal-thx__title {
+        font-size: 32px;
+      }
+  
+    .modal-thx__thxinfo {
+        margin-top: 16px;
+        width: 416px;
+        font-size: 16px;
+        line-height: calc(20 / 16);
+      }
+    }
