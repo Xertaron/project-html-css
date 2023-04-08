@@ -78,6 +78,23 @@
   background-color: $white;
   border: none;
   fill: $black;
+  &:hover {
+    cursor: pointer;
+    animation: shopnow 10s infinite 0.1s alternate linear;
+  }
+  @keyframes shopnow {
+    from {
+      filter: invert(98%) sepia(89%) saturate(1281%) hue-rotate(292deg) brightness(107%)
+        contrast(93%);
+      transform: rotate(0deg) scale(1);
+    }
+
+    to {
+      filter: invert(75%) sepia(42%) saturate(6520%) hue-rotate(325deg) brightness(95%)
+        contrast(90%);
+      transform: rotate(360deg) scale(1.2);
+    }
+  }
   @include desktop {
     background: none;
     position: absolute;
@@ -85,9 +102,6 @@
     right: 15%;
     width: 300px;
     height: 300px;
-  }
-  &:hover {
-    cursor: pointer;
   }
 }
 
