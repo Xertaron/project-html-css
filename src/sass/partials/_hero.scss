@@ -11,7 +11,6 @@
   min-width: 145px;
   background-color: transparent;
   @include mobile-up {
-    max-width: 390px;
     width: 40vw;
   }
   @include desktop {
@@ -35,7 +34,6 @@
 .hero__title {
   position: absolute;
   font-weight: 400;
-  letter-spacing: 0.06em;
   color: $black;
   text-transform: uppercase;
   font-size: 15vw;
@@ -46,36 +44,38 @@
   transform: translateX(-50%);
   z-index: 1;
   line-height: 1;
+
   @include desktop {
     top: 40%;
-    left: 55%;
-    font-size: 11vw;
+    left: 50%;
+    font-size: 12vw;
     color: $white;
   }
 }
 
 .hero__subtitle {
   margin-right: 3%;
+  margin-left: 8%;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 4vw;
   line-height: 100%;
   margin-top: 0;
   margin-bottom: 0;
   color: $black;
   @include tablet-only {
-    font-size: 24px;
+    font-size: 3vw;
   }
   @include desktop {
     position: absolute;
     top: 68%;
-    left: 15%;
+    left: 20%;
     color: $white;
-    font-size: 32px;
+    font-size: 2.5vw;
   }
 }
 
 .hero__button {
-  margin-left: 2.68%;
+  margin-left: 1%;
   display: hidden;
   background-color: $white;
   border: none;
@@ -91,29 +91,29 @@
 .hero__button--mobile {
   display: none;
   width: 15vw;
-  height: auto;
+  height: 15vw;
   @include tablet-down {
     display: block;
   }
 }
 .hero__button--tablet {
   display: none;
-  width: 145px;
-  height: 150px;
+  width: 15vw;
+  height: 15vw;
   @include tablet-only {
     display: block;
   }
 }
 .hero__button--desktop {
   display: none;
-  width: 166px;
-  height: 166px;
+  width: 15vw;
+  height: 15vw;
 
   @include desktop {
     display: block;
     position: absolute;
     top: 64%;
-    right: 2%;
+    right: 14%;
     fill: $white;
   }
 }

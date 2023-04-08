@@ -33,11 +33,12 @@
 .store-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
   margin-bottom: 32px;
 }
 .store-list__item {
-  flex-basis: calc((100% - 16px) / 2);
+  width: calc(38% + 26px);
 }
 .store__product {
   text-align: left;
@@ -55,6 +56,29 @@
   opacity: 0.6;
   font-weight: 600;
   font-size: 12px;
+}
+.modal__button {
+  @include button-m;
+  display: flex;
+  margin: auto;
+  padding: 8px 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  color: $white;
+  transition: $transition;
+  &:hover,
+  &:focus {
+    background-color: $hover;
+    color: $white;
+    scale: 1.2;
+  }
 }
 
 @include tablet-only {
@@ -97,6 +121,10 @@
     font-size: 24px;
     line-height: 1.2;
     margin-bottom: 8px;
+  }
+  .modal__button {
+    @include button-l;
+    font-size: 28px;
   }
 }
 
@@ -145,13 +173,17 @@
     font-size: 28px;
     line-height: 1.2;
   }
+  .modal__button {
+    @include button-l;
+    font-size: 28px;
+  }
 }
 
-.modal {
-  display: none;
-  position: absolute;
-  margin-top: 32px;
-}
+// .modal {
+//   display: none;
+//   position: absolute;
+//   margin-top: 32px;
+// }
 .modal__title {
   font-weight: 500;
   line-height: 1.2;
@@ -161,58 +193,34 @@
     font-size: 20px;
   }
 }
-.modal__button {
-  display: flex;
-  margin: auto;
-  padding: 8px 0;
-  background-color: $button;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.33;
-  align-items: center;
-  border: 0;
-  letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  color: $white;
-  transition: $transition;
-  border-radius: 34px;
-  width: 170px;
-  height: 40px;
-  &:hover,
-  &:focus {
-    background-color: $hover;
-    color: $white;
-  }
-}
-.modal__title-contact {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 1.2;
-  text-align: left;
-}
-.modal__txtinfo {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.25;
-  text-align: left;
-  color: rgb(92, 92, 92);
-}
-.modal__label {
-  display: inline-flex;
-  flex-direction: column;
-}
-.modal__span {
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 1.2;
-  color: rgb(92, 92, 92);
-}
-.modal__close-btn {
-  position: absolute;
-  top: 28px;
-  right: 28px;
-  width: 16px;
-  height: 16px;
-  border: 2px solid $black;
-}
+// .modal__title-contact {
+//   font-weight: 600;
+//   font-size: 32px;
+//   line-height: 1.2;
+//   text-align: left;
+// }
+// .modal__txtinfo {
+//   font-weight: 500;
+//   font-size: 12px;
+//   line-height: 1.25;
+//   text-align: left;
+//   color: rgb(92, 92, 92);
+// }
+// .modal__label {
+//   display: inline-flex;
+//   flex-direction: column;
+// }
+// .modal__span {
+//   font-weight: 500;
+//   font-size: 10px;
+//   line-height: 1.2;
+//   color: rgb(92, 92, 92);
+// }
+// .modal__close-btn {
+//   position: absolute;
+//   top: 28px;
+//   right: 28px;
+//   width: 16px;
+//   height: 16px;
+//   border: 2px solid $black;
+// }
