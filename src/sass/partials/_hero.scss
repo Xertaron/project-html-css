@@ -75,13 +75,9 @@
 }
 
 .hero__button {
-  margin-left: 1%;
   background-color: $white;
   border: none;
   fill: $black;
-  &:hover {
-    cursor: pointer;
-  }
   @include desktop {
     background: none;
     position: absolute;
@@ -89,6 +85,9 @@
     right: 15%;
     width: 300px;
     height: 300px;
+  }
+  &:hover {
+    cursor: pointer;
   }
 }
 
