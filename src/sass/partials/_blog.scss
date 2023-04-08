@@ -1,6 +1,7 @@
 .blog {
   display: flex;
   flex-direction: column;
+  margin-top: 0;
   min-width: 320px;
 }
 .blog__header {
@@ -35,8 +36,7 @@
   gap: 14px;
 }
 .blog__picture {
-  max-width: 216px;
-  min-width: 136px;
+  width: 100%;
   height: auto;
 }
 .blog__slider-btns {
