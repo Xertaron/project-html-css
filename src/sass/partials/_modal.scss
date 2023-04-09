@@ -11,15 +11,14 @@
   visibility: visible;
   opacity: 1;
   transition-property: opacity, visibility, transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  transition: $transition;
 }
 .is-hidden {
   visibility: hidden;
   pointer-events: none;
   opacity: 0;
   z-index: 100;
-  transition-delay: 500ms;
+  transition: $transition;
 }
 .modal {
   width: 272px;
