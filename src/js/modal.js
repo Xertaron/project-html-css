@@ -22,7 +22,7 @@
   function checkfnlname(field) {
     curr = document.getElementById(field).value;
     if (curr.length > 0) {
-      updateCSSClass(field, 2);
+      updateCSSClass(field, 1);
       return true;
     } else {
       updateCSSClass(field, 0);
