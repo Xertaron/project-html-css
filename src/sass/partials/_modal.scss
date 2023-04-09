@@ -278,12 +278,7 @@
   background-color: white;
 }
 .modal-blog__icon {
-  width: 18px;
-  height: 18px;
-  @include tablet-up {
-    width: 24px;
-    height: 24px;
-  }
+  stroke: $black;
 }
 .modal-blog__img {
   display: flex;
