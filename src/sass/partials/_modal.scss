@@ -327,6 +327,7 @@
     width: 860px;
     height: 528px;
     flex-direction: row;
+    padding: 0;
   }
 }
 .modal-blog__close-button {
@@ -350,6 +351,9 @@
   display: flex;
   background-color: $white;
   justify-content: center;
+  @include desktop {
+    justify-content: flex-start;
+  }
 }
 .modal-blog__header {
   margin: 18px 0 14px 0;
