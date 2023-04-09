@@ -11,7 +11,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 1.21;
-  padding: 0px 16px;
+  padding: 0px;
 }
 
 .line {
@@ -30,32 +30,18 @@
 .delivery__list {
   display: flex;
   flex-direction: column;
-  padding: 32px 24px 32px 16px;
+  margin-top: 32px;
   list-style: none;
   counter-reset: li-counter;
-  padding-left: 0;
-  margin-bottom: 26px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 40px;
-  }
-
-  @media (min-width: 1280px) {
-    margin-bottom: 60px;
-    padding: 0 80px;
-  }
-}
-.delivery__list > :first-child {
-  margin-bottom: 19px;
-}
-.delivery__list > :last-child {
-  margin-bottom: 32px;
 }
 .delivery__item {
   display: flex;
   align-items: stretch;
   margin-bottom: 22px;
   font-weight: 500;
+}
+.delivery__item:last-child {
+  margin-bottom: 26px;
 }
 
 .delivery__step {
@@ -85,12 +71,13 @@
   line-height: 1.2;
   font-weight: 500;
 }
-.delivery-image {
+.delivery__image {
   width: 100%;
   height: auto;
-  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
 }
-@media screen and (min-width: 768px) {
+@include tablet-only {
   .delivery {
     max-width: 1280px;
   }
@@ -101,12 +88,16 @@
   .line {
     padding-left: 16px;
   }
+  .delivery__list {
+    margin-top: 60px;
+  }
   .delivery__item {
     margin-bottom: 32px;
   }
-  .delivery__list {
-    padding: 60px 67px 40px 24px;
+  .delivery__item:last-child {
+    margin-bottom: 40px;
   }
+
   .delivery__step {
     min-width: 64px;
     height: 64px;
@@ -120,17 +111,30 @@
     font-size: 24px;
   }
 }
-@media screen and (min-width: 1280px) {
+@include desktop {
+  .delivery__header {
+    font-size: 44px;
+  }
   .delivery__description {
     font-size: 32px;
   }
+  .delivery__list {
+    margin-top: 80px;
+  }
   .delivery__item {
+    display: flex;
+    align-items: center;
     margin-bottom: 35px;
   }
-  .delivery__list {
-    padding: 91px 209px 69px 96px;
+  .delivery__item:last-child {
+    margin-bottom: 60px;
   }
+
   .delivery__step {
-    margin-right: 96px;
+    min-width: 64px;
+    height: 64px;
+    font-size: 26px;
+    line-height: 32px;
+    margin-right: 56px;
   }
 }

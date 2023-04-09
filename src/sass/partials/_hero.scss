@@ -10,14 +10,15 @@
   max-width: 40vw;
   min-width: 145px;
   background-color: transparent;
+  padding-right: 1%;
   @include mobile-up {
-    max-width: 390px;
     width: 40vw;
   }
   @include desktop {
     width: 100vw;
     max-width: none;
     border-radius: 0;
+    padding: 0;
   }
 }
 
@@ -68,53 +69,66 @@
   }
   @include desktop {
     position: absolute;
-    top: 68%;
-    left: 20%;
+    top: 71%;
+    left: 5%;
     color: $white;
     font-size: 2.5vw;
   }
 }
 
 .hero__button {
-  margin-left: 1%;
-  display: hidden;
-  background-color: $white;
+  background: none;
   border: none;
   fill: $black;
-  top: 50%;
-  right: 10%;
-  transform: translateX (50%, -10%);
   &:hover {
     cursor: pointer;
+    animation: shopnow 10s infinite 0.1s alternate linear;
+  }
+  @keyframes shopnow {
+    from {
+      filter: invert(98%) sepia(89%) saturate(1281%) hue-rotate(292deg) brightness(107%)
+        contrast(93%);
+      transform: rotate(0deg) scale(1);
+    }
+
+    to {
+      filter: invert(75%) sepia(42%) saturate(6520%) hue-rotate(325deg) brightness(95%)
+        contrast(90%);
+      transform: rotate(360deg) scale(1.2);
+    }
+  }
+  @include desktop {
+    position: absolute;
+    top: 60%;
+    right: 15%;
   }
 }
 
 .hero__button--mobile {
   display: none;
   width: 15vw;
-  height: auto;
+  height: 15vw;
   @include tablet-down {
     display: block;
   }
 }
 .hero__button--tablet {
   display: none;
-  width: 145px;
-  height: 150px;
+  width: 15vw;
+  height: 15vw;
   @include tablet-only {
     display: block;
   }
 }
 .hero__button--desktop {
   display: none;
-  width: 166px;
-  height: 166px;
+  width: 15vw;
+  height: 15vw;
 
   @include desktop {
     display: block;
-    position: absolute;
-    top: 64%;
-    right: 14%;
+    top: 15%;
+    right: 15%;
     fill: $white;
   }
 }

@@ -5,18 +5,22 @@
 
   align-items: center;
   margin: 0 auto;
-  padding: 16px 16px 16px 0;
+  padding: 16px 16px 16px 16px;
 
   @include tablet-up {
     margin: 0 auto 100px auto;
-    padding: 40px 0;
+    padding: 24px 24px;
     max-width: 1280px;
+  }
+  @include desktop {
+    padding: 28px 0 0;
+    margin: 0 auto -113px;
   }
 }
 
 .header__logo {
   display: block;
-  fill: black;
+  fill: $black;
 
   @include tablet-up {
     width: 72px;
@@ -24,15 +28,17 @@
     transition: $transition;
     &:hover,
     &:focus {
-      stroke: rgba(232, 111, 84, 0.5);
+      stroke: $button;
       width: 79px;
       height: 64px;
       margin: -3.5px;
+      fill: $button;
     }
   }
   @include desktop {
-    top: 24px;
-    right: 24px;
+    fill: $white;
+    position: relative;
+    z-index: 1;
   }
 }
 @media screen and (min-width: 768px) {
@@ -71,10 +77,6 @@
 
 .header__logo-link {
   margin-right: auto;
-  padding-left: 16px;
-  @include tablet-up {
-    padding-left: 24px;
-  }
 }
 
 .header__phone-link {
@@ -92,7 +94,7 @@
 
 .header__phone {
   display: block;
-  fill: black;
+  fill: $black;
   cursor: pointer;
   margin-right: 14px;
   @include tablet-up {
@@ -103,12 +105,15 @@
   @include desktop {
     width: 28px;
     height: 28px;
+    position: relative;
+    z-index: 1;
+    fill: $white;
   }
 }
 
 .header__burger {
   display: block;
-  fill: black;
+  fill: $black;
   z-index: 998;
 }
 
@@ -144,12 +149,9 @@
   height: 100vh;
   padding: 124px 40px;
   background-color: $button;
-  z-index: 999;
+  z-index: 1000;
   transform: translateX(200%);
   transition: transform 250ms ease-in-out;
-  @include tablet-down {
-    visibility: hidden;
-  }
 
   @include tablet-up {
     position: relative;
@@ -164,7 +166,6 @@
 
 .menu-container.is-open {
   transform: translateX(0);
-  visibility: visible;
 }
 
 .menu-container .menu-toggle {
@@ -187,6 +188,7 @@
 }
 
 .mobile-menu__item {
+  display: inline;
   @include tablet-up {
     padding: 0;
     margin: 0;
@@ -207,11 +209,13 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 1.2;
-  font-family: 'Montserrat';
 
   @include tablet-up {
     margin: 0;
     color: $black;
+  }
+  @include desktop {
+    color: $white;
   }
 }
 
