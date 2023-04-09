@@ -354,6 +354,9 @@
 }
 .modal-blog__description {
   font-size: 12px;
+  @include tablet-up {
+    font-size: 16px;
+  }
 }
 .modal-blog__text {
   align-items: center;
