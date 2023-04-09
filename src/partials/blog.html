@@ -88,26 +88,22 @@
   <button class="blog__btn-sub" type="button" data-modal-blog-open1>Subscribe</button>
   <!--Modal-->
   <div class="backdrop is-hidden" data-modal-blog>
-    <div class="modal">
+    <div class="modal-blog">
       <button type="button" class="modal__close-button" data-modal-blog-close></button>
-      <div class="modal__img">
-        <picture>
-          <source
-            srcset="./images/blog/modal-subscribe-desktop.jpg 1x"
-            media="(min-width:1280px)"
-          />
-          <source srcset="./images/blog/modal-subscribe-tablet.jpg 1x" media="(min-width:768px)" />
-          <source srcset="./images/blog/modal-subscribe-mobile.jpg 1x" media="(min-width:480px)" />
-          <img src="./images/blog/modal-subscribe-desktop.jpg" alt="red flower" />
-        </picture>
-      </div>
-      <div class="modal__text">
+      <picture class="modal-blog__img">
+        <source srcset="./images/blog/modal-subscribe-desktop.jpg 1x" media="(min-width:1280px)" />
+        <source srcset="./images/blog/modal-subscribe-tablet.jpg 1x" media="(min-width:768px)" />
+        <source srcset="./images/blog/modal-subscribe-mobile.jpg 1x" media="(min-width:480px)" />
+        <img src="./images/blog/modal-subscribe-desktop.jpg" alt="red flower" />
+      </picture>
+
+      <div class="modal-blog__text">
         <h3>Follow to our newsletter</h3>
         <p>
           Be the first to get exclusive offers and the latest news on our product directly in your
           box.
         </p>
-        <form class="form-modal">
+        <form class="modal-blog__form">
           <label class="form-modal__label">
             <span class="form-modal__label-text">Email</span>
             <div class="form-modal__input">
