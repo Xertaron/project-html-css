@@ -89,7 +89,11 @@
   <!--Modal-->
   <div class="backdrop is-hidden" data-modal-blog>
     <div class="modal-blog">
-      <button type="button" class="modal-blog__close-button" data-modal-blog-close></button>
+      <button type="button" class="modal-blog__close-button" data-modal-blog-close>
+        <svg class="modal-blog__icon">
+          <use href="./images/icons/sprite.svg#icon-close-btn"></use>
+        </svg>
+      </button>
       <picture class="modal-blog__img">
         <source srcset="./images/blog/modal-subscribe-desktop.jpg 1x" media="(min-width:1280px)" />
         <source srcset="./images/blog/modal-subscribe-tablet.jpg 1x" media="(min-width:768px)" />
