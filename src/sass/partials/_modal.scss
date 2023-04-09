@@ -320,11 +320,13 @@
     display: block;
     width: 588px;
     height: 644px;
+    padding: 0 118px;
   }
   @include desktop {
     display: flex;
     width: 860px;
     height: 528px;
+    flex-direction: row;
   }
 }
 .modal-blog__close-button {
@@ -337,7 +339,7 @@
   border-radius: 50%;
   cursor: pointer;
   border: 0;
-  background-color: $white;
+  background: none;
 }
 .modal-blog__icon {
   stroke: $black;
@@ -351,6 +353,12 @@
 }
 .modal-blog__header {
   margin: 18px 0 14px 0;
+  font-size: 18px;
+  font-weight: 600;
+  @include tablet-up {
+    font-size: 28px;
+    margin: 28px 0 24px;
+  }
 }
 .modal-blog__description {
   font-size: 12px;
@@ -394,6 +402,9 @@
   display: inline-flex;
   flex-direction: column;
   margin: 18px 0;
+  @include tablet-up {
+    margin: 32px 0 28px;
+  }
 }
 .modal-blog__input {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -402,6 +413,7 @@
   width: 236px;
   height: 37px;
   margin-bottom: 10px;
+  padding-left: 12px;
 
   @include tablet-up {
     width: 336px;
@@ -415,10 +427,16 @@
   height: 37px;
   background-color: $button;
   border-radius: 8px;
+  color: $white;
+  border: none;
   @include tablet-up {
     width: 336px;
     height: 50px;
   }
+}
+.modal-blog__position {
+  display: flex;
+  flex-direction: column;
 }
 /*
 // DESKTOP RESPONSIVE
