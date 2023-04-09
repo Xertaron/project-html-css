@@ -1,10 +1,15 @@
+<style>
+  .Slide {
+    display: none;
+  }
+</style>
 <section class="blog container">
   <h2 class="blog__header" id="section-blog">
     BLOG
     <hr class="line" />
   </h2>
   <div class="blog__box">
-    <ul class="blog__list">
+    <ul>
       <li class="blog__item">
         <picture class="blog__picture">
           <source
@@ -25,7 +30,12 @@
             srcset="./images/blog/blog-desktop.jpg 1x, ./images/blog/blog-desktop@2x.jpg 2x"
             type="image/jpeg"
           />
-          <img src="./images/blog/blog-mobile.jpg" alt="flowers" />
+          <img
+            class="slide"
+            src="./images/blog/blog-mobile.jpg"
+            alt="flowers"
+            style="width: 100%; display: block"
+          />
         </picture>
       </li>
       <li class="blog__item">
@@ -48,11 +58,16 @@
             srcset="./images/blog/blog3-desktop.jpg 1x, ./images/blog/blog3-desktop@2x.jpg 2x"
             type="image/jpeg"
           />
-          <img src="./images/blog/blog3-mobile.jpg" alt="flowers" />
+          <img
+            class="slide"
+            src="./images/blog/blog3-mobile.jpg"
+            alt="flowers"
+            style="width: 100%; display: none"
+          />
         </picture>
       </li>
       <li class="blog__item">
-        <picture class="blog__picture--extra">
+        <picture class="blog__picture">
           <source
             media="(min-width: 320px) and (max-width: 767px)"
             srcset="./images/blog/blog2-mobile.jpg"
@@ -71,18 +86,27 @@
             srcset="./images/blog/blog2-desktop.jpg 1x, ./images/blog/blog2-desktop@2x.jpg 2x"
             type="image/jpeg"
           />
-          <img src="./images/blog/blog2-mobile.jpg" alt="flowers" />
+          <img
+            class="slide"
+            src="./images/blog/blog2-mobile.jpg"
+            alt="flowers"
+            style="width: 100%; display: none"
+          />
         </picture>
       </li>
     </ul>
   </div>
   <div class="blog__slider-btns">
-    <svg class="blog__btn-left" width="61" height="61">
-      <use href="./images/icons/sprite.svg#icon-arrow-left"></use>
-    </svg>
-    <svg class="blog__btn-right" width="61" height="61">
-      <use href="./images/icons/sprite.svg#icon-arrow-right"></use>
-    </svg>
+    <button class="button-blog" onclick="plusDivs(-1)">
+      <svg class="blog__btn-left" width="61" height="61">
+        <use href="./images/icons/sprite.svg#icon-arrow-left"></use>
+      </svg>
+    </button>
+    <button class="button-blog" onclick="plusDivs(1)">
+      <svg class="blog__btn-right" width="61" height="61">
+        <use href="./images/icons/sprite.svg#icon-arrow-right"></use>
+      </svg>
+    </button>
   </div>
   <p class="blog__description">Follow to our newsletter</p>
   <button class="blog__btn-sub" type="button" data-modal-blog-open>Subscribe</button>
@@ -132,3 +156,27 @@
   </div>
 </section>
 <!---->
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs((slideIndex += n));
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName('slide');
+    var dots = document.getElementsByClassName('demo');
+    if (n > x.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = x.length;
+    }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = 'none';
+    }
+    x[slideIndex - 1].style.display = 'block';
+  }
+</script>
