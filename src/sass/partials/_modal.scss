@@ -260,6 +260,18 @@
     height: 528px;
   }
 }
+.modal-blog__close-button {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  right: 8px;
+  top: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+}
 .modal-blog__img {
   display: flex;
   background-color: white;
@@ -286,6 +298,66 @@
     width: 236px;
     height: 37px;
   }
+  @include tablet-up {
+    width: 336px;
+    height: 50px;
+  }
+}
+.modal-blog__label {
+  display: inline-flex;
+  flex-direction: column;
+}
+.modal-blog__text {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+  color: #5c5c5c;
+  border: 0;
+  margin-right: 290px;
+
+  @include mobile-up {
+    font-size: 12px;
+  }
+  @include tablet-up {
+    font-size: 16px;
+  }
+  &:focus-within {
+    outline: none;
+  }
+}
+.modal-blog__input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  @include mobile-up {
+    font-size: 12px;
+    width: 236px;
+    height: 37px;
+    margin-bottom: 10px;
+  }
+  @include tablet-up {
+    width: 336px;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}
+.modal-blog__email {
+  border: 0;
+
+  @include mobile-up {
+    width: 230px;
+    height: 33px;
+  }
+  @include tablet-up {
+    width: 330px;
+    height: 48px;
+  }
+}
+.modal__btn {
+  width: 236px;
+  height: 37px;
+  background-color: $button;
+  border-radius: 8px;
   @include tablet-up {
     width: 336px;
     height: 50px;
