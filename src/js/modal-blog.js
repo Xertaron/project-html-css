@@ -1,18 +1,18 @@
 (() => {
   const refs = {
-    openModalBtn1: document.querySelector('[data-modal-open1]'),
-    openModalBtn2: document.querySelector('[data-modal-open2]'),
-    openModalBtn3: document.querySelector('[data-modal-open3]'),
-    openModalBtn4: document.querySelector('[data-modal-open4]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
+    openModalBlogBtn1: document.querySelector('[data-modal-blog-open1]'),
+    openModalBlogBtn2: document.querySelector('[data-modal-blog-open2]'),
+    openModalBlogBtn3: document.querySelector('[data-modal-blog-open3]'),
+    openModalBlogBtn4: document.querySelector('[data-modal-blog-open4]'),
+    closeModalBlogBtn: document.querySelector('[data-modal-blog-close]'),
     modal: document.querySelector('[data-modal-blog]'),
   };
 
-  refs.openModalBtn1.addEventListener('click', toggleModal);
-  refs.openModalBtn2.addEventListener('click', toggleModal);
-  refs.openModalBtn3.addEventListener('click', toggleModal);
-  refs.openModalBtn4.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBlogBtn1.addEventListener('click', toggleModal);
+  refs.openModalBlogBtn2.addEventListener('click', toggleModal);
+  refs.openModalBlogBtn3.addEventListener('click', toggleModal);
+  refs.openModalBlogBtn4.addEventListener('click', toggleModal);
+  refs.closeModalBlogBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
