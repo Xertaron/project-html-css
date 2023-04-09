@@ -384,7 +384,7 @@
     font-size: 16px;
   }
   @include desktop {
-    margin-bottom: 70px;
+    margin-bottom: 8px;
     align-items: center;
   }
   &:focus-within {
@@ -439,8 +439,11 @@
   }
 }
 .modal-blog__position {
-  display: flex;
-  flex-direction: column;
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    padding: 111px 40px 112px 40px;
+  }
 }
 /*
 // DESKTOP RESPONSIVE
