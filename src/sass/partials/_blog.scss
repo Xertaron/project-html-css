@@ -63,6 +63,11 @@
     stroke: $hover;
   }
 }
+@media screen and (max-width: 1279px) {
+  .blog__picture--extra {
+    display: none;
+  }
+}
 .blog__picture {
   display: block;
   min-width: 136px;
