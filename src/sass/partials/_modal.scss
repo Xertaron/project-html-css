@@ -465,7 +465,7 @@
     outline-color: $input-hover;
     transition: $transition;
   }
-  &:invalid {
+  &:invalid:not(:placeholder-shown) {
     outline-color: $invalid;
   }
   &:valid:not(:placeholder-shown) {
