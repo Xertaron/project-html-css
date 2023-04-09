@@ -173,6 +173,7 @@
     font-size: 14px;
     line-height: 1.2;
   }
+
   .modal__form-input {
     margin-bottom: 32px;
     width: 100%;
@@ -282,6 +283,14 @@
   text-align: center;
   color: $black;
 }
+.modal-thx__icon {
+  width: 18px;
+  height: 18px;
+  @include tablet-up {
+    width: 24px;
+    height: 24px;
+  }
+}
 
 .modal-thx__txtinfo {
   margin-top: 14px;
@@ -296,7 +305,7 @@
   }
 }
 
-@include tablet-only {
+@include tablet-up {
   .modal-thx {
     width: 480px;
     min-height: 505px;
@@ -311,14 +320,28 @@
     font-size: 32px;
   }
 
-  .modal-thx__thxinfo {
+  .modal-thx__txtinfo {
     margin-top: 16px;
     width: 416px;
     font-size: 16px;
     line-height: 1.25;
   }
 }
-
+.modal-thx__button {
+  padding: 10px 86px 10px 87px;
+  display: block;
+  background: $button;
+  color: $white;
+  border-radius: 8px;
+  font-weight: 500;
+  line-height: 24px;
+  border: 0;
+  outline: none;
+  margin-top: 18px;
+  @include tablet-up {
+    margin: 0;
+  }
+}
 // Blog Modal
 
 .modal-blog {
