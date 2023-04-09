@@ -80,7 +80,6 @@
   line-height: 1.2;
   text-decoration-style: bold;
   text-align: left;
-
 }
 .modal__txtinfo {
   width: 240px;
@@ -88,7 +87,6 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 1.25;
-
 }
 .modal__form {
   display: flex;
@@ -137,7 +135,7 @@
   padding: 10px 102px 10px 101px;
   display: block;
   background: $button;
-  color:$white;
+  color: $white;
   border-radius: 8px;
   font-weight: 500;
   line-height: 24px;
@@ -151,14 +149,12 @@
 }
 
 @include tablet-only {
-  
   .modal-contact {
     width: 480px;
     max-height: 511px;
     padding: 48px 32px;
   }
   .modal_title {
-
     font-size: 32px;
     line-height: 1.2;
     margin-bottom: 24px;
@@ -184,7 +180,7 @@
     font-size: 14px;
     line-height: 1.2;
   }
-  
+
   .modal__button {
     padding: 14px 184px;
     margin-top: 14px;
@@ -230,8 +226,6 @@
     margin-top: 14px;
   }
 }
-
-
 
 // MODAL THANK YOU
 
@@ -291,7 +285,6 @@
   }
 
   .modal-thx__img {
-
     width: 266px;
     height: 202px;
   }
@@ -312,7 +305,7 @@
 
 .modal-blog {
   background-color: $white;
-  color:$black;
+  color: $black;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -322,6 +315,8 @@
   height: 380px;
   display: flex;
   flex-direction: column;
+  text-align: center;
+  padding: 0 16px;
   @include tablet-up {
     display: block;
     width: 588px;
@@ -336,14 +331,14 @@
 .modal-blog__close-button {
   position: absolute;
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   right: 8px;
   top: 8px;
   border-radius: 50%;
   cursor: pointer;
   border: 0;
-  background-color:$white;
+  background-color: $white;
 }
 .modal-blog__icon {
   stroke: $black;
@@ -355,10 +350,12 @@
   background-color: $white;
   justify-content: center;
 }
+.modal-blog__header {
+  margin: 18px 0 14px 0;
+}
 .modal-blog__text {
   align-items: center;
   display: flex;
-  flex-direction: column;
   font-style: normal;
   font-weight: 500;
   line-height: 12px;
@@ -391,6 +388,7 @@
 .modal-blog__label {
   display: inline-flex;
   flex-direction: column;
+  margin: 18px 0;
 }
 .modal-blog__input {
   border: 1px solid rgba(33, 33, 33, 0.2);
