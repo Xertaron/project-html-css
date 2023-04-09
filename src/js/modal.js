@@ -19,4 +19,14 @@
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
   }
+  function checkfnlname(field) {
+    curr = document.getElementById(field).value;
+    if (curr.length > 0) {
+      updateCSSClass(field, 2);
+      return true;
+    } else {
+      updateCSSClass(field, 0);
+      return false;
+    }
+  }
 })();
