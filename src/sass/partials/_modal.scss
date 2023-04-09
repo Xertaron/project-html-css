@@ -339,7 +339,8 @@
   outline: none;
   margin-top: 18px;
   @include tablet-up {
-    margin: 0;
+    margin: 34px 0 54px 0;
+    padding: 14px 165px;
   }
 }
 // Blog Modal
