@@ -346,14 +346,25 @@
 .modal-blog__text {
   align-items: center;
   display: flex;
-  justify-content: center;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+  color: #5c5c5c;
+  border: 0;
 
   @include mobile-up {
     flex-direction: column;
+    font-size: 12px;
+  }
+  @include tablet-up {
+    font-size: 16px;
   }
   @include desktop {
     margin-bottom: 70px;
     align-items: center;
+  }
+  &:focus-within {
+    outline: none;
   }
 }
 .modal-blog__form {
@@ -372,24 +383,6 @@
 .modal-blog__label {
   display: inline-flex;
   flex-direction: column;
-}
-.modal-blog__text {
-  font-style: normal;
-  font-weight: 500;
-  line-height: 12px;
-  color: #5c5c5c;
-  border: 0;
-  margin-right: 290px;
-
-  @include mobile-up {
-    font-size: 12px;
-  }
-  @include tablet-up {
-    font-size: 16px;
-  }
-  &:focus-within {
-    outline: none;
-  }
 }
 .modal-blog__input {
   border: 1px solid rgba(33, 33, 33, 0.2);
