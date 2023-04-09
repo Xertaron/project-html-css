@@ -116,6 +116,19 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 1.25;
+  &:focus-within {
+    outline-color: $input-hover;
+    transition: $transition;
+  }
+  &:invalid {
+    outline-color: $invalid;
+  }
+  &:valid:not(:placeholder-shown) {
+    outline-color: $valid;
+  }
+  &::placeholder {
+    color: $placeholder;
+  }
 }
 .modal__form-input:hover,
 .modal__form-input:focus {
@@ -178,6 +191,19 @@
     height: 49px;
     font-size: 14px;
     line-height: 1.2;
+    &:focus-within {
+      outline-color: $input-hover;
+      transition: $transition;
+    }
+    &:invalid {
+      outline-color: $invalid;
+    }
+    &:valid:not(:placeholder-shown) {
+      outline-color: $valid;
+    }
+    &::placeholder {
+      color: $placeholder;
+    }
   }
 
   .modal__button {
@@ -418,6 +444,19 @@
   height: 37px;
   margin-bottom: 10px;
   padding-left: 12px;
+  &:focus-within {
+    outline-color: $input-hover;
+    transition: $transition;
+  }
+  &:invalid {
+    outline-color: $invalid;
+  }
+  &:valid:not(:placeholder-shown) {
+    outline-color: $valid;
+  }
+  &::placeholder {
+    color: $placeholder;
+  }
 
   @include tablet-up {
     width: 336px;
