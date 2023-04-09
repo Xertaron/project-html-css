@@ -175,6 +175,7 @@
   .store__button {
     @include button-l;
     font-size: 28px;
+    margin-bottom: 10px;
   }
 }
 // .modal__title-contact {
