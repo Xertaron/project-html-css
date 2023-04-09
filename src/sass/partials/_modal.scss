@@ -68,6 +68,9 @@
     height: 24px;
   }
 }
+.modal__icon {
+  height: 24px;
+}
 
 .modal__title {
   margin-top: 28px;
@@ -279,7 +282,7 @@
 }
 .modal-blog__icon {
   stroke: $black;
-  height: 30px;
+  height: 24px;
 }
 .modal-blog__img {
   display: flex;
