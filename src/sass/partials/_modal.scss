@@ -351,6 +351,11 @@
 }
 .modal-blog__header {
   margin: 18px 0 14px 0;
+  font-size: 19px;
+  font-weight: 600;
+  @include tablet-up {
+    font-size: 28px;
+  }
 }
 .modal-blog__description {
   font-size: 12px;
