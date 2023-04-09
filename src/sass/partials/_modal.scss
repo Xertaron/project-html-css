@@ -279,6 +279,7 @@
 }
 .modal-blog__icon {
   stroke: $black;
+  height: 30px;
 }
 .modal-blog__img {
   display: flex;
@@ -349,7 +350,7 @@
     font-size: 16px;
   }
 }
-.modal__btn {
+.modal-blog__btn {
   width: 236px;
   height: 37px;
   background-color: $button;
