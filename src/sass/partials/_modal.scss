@@ -110,7 +110,6 @@
   color: $black;
   border: 1px solid $input;
   border-radius: 4px;
-  outline: none;
   margin-bottom: 14px;
   padding-left: 12px;
   font-size: 12px;
@@ -128,6 +127,9 @@
   }
   &::placeholder {
     color: $placeholder;
+  }
+  &:not(:invalid) {
+    outline-color: $input-hover;
   }
 }
 
@@ -192,6 +194,9 @@
     }
     &::placeholder {
       color: $placeholder;
+    }
+    &:not(:invalid) {
+      outline-color: $input-hover;
     }
   }
 
