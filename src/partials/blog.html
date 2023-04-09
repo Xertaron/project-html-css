@@ -6,7 +6,7 @@
   <div class="blog__box">
     <ul class="blog__list">
       <li class="blog__item">
-        <picture class="blog-picture">
+        <picture class="blog__picture">
           <source
             media="(min-width: 320px) and (max-width: 767px)"
             srcset="./images/blog/blog-mobile.jpg"
@@ -28,8 +28,8 @@
           <img src="./images/blog/blog-mobile.jpg" alt="flowers" />
         </picture>
       </li>
-      <li class="blog-list__item">
-        <picture class="blog-picture">
+      <li class="blog__item">
+        <picture class="blog__picture">
           <source
             media="(min-width: 320px) and (max-width: 767px)"
             srcset="./images/blog/blog3-mobile.jpg"
@@ -51,8 +51,8 @@
           <img src="./images/blog/blog3-mobile.jpg" alt="flowers" />
         </picture>
       </li>
-      <li class="blog-list__item">
-        <picture class="blog-picture">
+      <li class="blog__item">
+        <picture class="blog__picture">
           <source
             media="(min-width: 320px) and (max-width: 767px)"
             srcset="./images/blog/blog2-mobile.jpg"
@@ -86,11 +86,13 @@
   </div>
   <p class="blog__description">Follow to our newsletter</p>
   <button class="blog__btn-sub" type="button" data-modal-blog-open>Subscribe</button>
+
   <!--Modal-->
+
   <div class="backdrop is-hidden" data-modal-blog>
     <div class="modal-blog">
       <button type="button" class="modal-blog__close-button" data-modal-blog-close>
-        <svg class="modal-blog__icon" width>
+        <svg class="modal-blog__icon">
           <use href="./images/icons/sprite.svg#icon-close-btn"></use>
         </svg>
       </button>

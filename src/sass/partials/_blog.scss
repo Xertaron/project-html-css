@@ -68,7 +68,18 @@
     display: none;
   }
 }
-
+.blog__picture {
+  min-width: 136px;
+  width: 40vw;
+  @include tablet-only {
+    min-width: 344px;
+    width: 40vw;
+  }
+  @include desktop {
+    min-width: 390px;
+    width: 30vw;
+  }
+}
 .blog__btn-sub {
   margin: auto;
   margin-bottom: 60px;
