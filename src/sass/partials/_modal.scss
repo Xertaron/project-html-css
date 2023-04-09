@@ -115,11 +115,12 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 1.25;
+  transition: $transition;
   &:focus-within {
     outline-color: $input-hover;
     transition: $transition;
   }
-  &:invalid {
+  &:invalid:not(:placeholder-shown) {
     outline-color: $invalid;
   }
   &:valid:not(:placeholder-shown) {
@@ -127,9 +128,6 @@
   }
   &::placeholder {
     color: $placeholder;
-  }
-  &:not(:invalid) {
-    outline-color: $input-hover;
   }
 }
 
@@ -186,7 +184,7 @@
       outline-color: $input-hover;
       transition: $transition;
     }
-    &:invalid {
+    &:invalid:not(:placeholder-shown) {
       outline-color: $invalid;
     }
     &:valid:not(:placeholder-shown) {
@@ -194,9 +192,6 @@
     }
     &::placeholder {
       color: $placeholder;
-    }
-    &:not(:invalid) {
-      outline-color: $input-hover;
     }
   }
 
