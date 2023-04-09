@@ -130,18 +130,6 @@
     color: $placeholder;
   }
 }
-.modal__form-input:hover,
-.modal__form-input:focus {
-  border-color: $input;
-  outline: none;
-}
-.modal__form-label:hover,
-.modal__form-label:focus-within {
-  fill: $sendButton;
-}
-.modal::placeholder {
-  color: currentColor;
-}
 
 .modal__button {
   padding: 10px 102px 10px 101px;
