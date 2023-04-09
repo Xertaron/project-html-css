@@ -10,6 +10,7 @@
   max-width: 40vw;
   min-width: 145px;
   background-color: transparent;
+  padding-right: 1%;
   @include mobile-up {
     width: 40vw;
   }
@@ -17,6 +18,7 @@
     width: 100vw;
     max-width: none;
     border-radius: 0;
+    padding: 0;
   }
 }
 
@@ -99,8 +101,6 @@
     position: absolute;
     top: 60%;
     right: 15%;
-    width: 300px;
-    height: 300px;
   }
 }
 
@@ -127,7 +127,6 @@
 
   @include desktop {
     display: block;
-    position: absolute;
     top: 15%;
     right: 15%;
     fill: $white;
