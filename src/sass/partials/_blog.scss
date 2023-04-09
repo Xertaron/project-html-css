@@ -1,7 +1,6 @@
 .blog {
   display: flex;
   flex-direction: column;
-  min-width: 320px;
 }
 .blog__header {
   content: '';
@@ -10,7 +9,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 1.21;
-  padding: 0px 16px 32px 16px;
+  padding: 32px 0;
 }
 .line {
   display: table-cell;
@@ -73,7 +72,6 @@
 }
 .blog__btn-sub {
   margin: auto;
-  margin-bottom: 60px;
   padding: 8px 39.5px;
   background-color: $button;
   font-weight: 500;
@@ -129,7 +127,6 @@
     height: 64px;
     font-size: 28px;
     font-weight: 500;
-    margin-bottom: 100px;
     transition: $transition;
     &:hover,
     &:focus {
@@ -166,7 +163,6 @@
     height: 64px;
     font-size: 28px;
     font-weight: 500;
-    margin-bottom: 101px;
   }
 }
 //
