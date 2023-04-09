@@ -169,12 +169,11 @@
         <span class="modal__txt">Name</span>
         <input
           class="modal__form-input"
-          type="text"
           name="imie"
           placeholder="Name Surname"
+          type="name"
+          minlength="2"
           autofocus
-          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-          title="Username must be two words separated by space."
           required
         />
       </label>
@@ -186,8 +185,6 @@
           type="email"
           name="email"
           placeholder="email@example.com"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-          title="Email must contain at least three words separated by @ first and by a comma next. Just like emails do. Duh"
           required
         />
       </label>
