@@ -11,13 +11,19 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 1.21;
-  &::after {
-    content: '';
-    height: 1px;
-    width: calc(100vw - 200px);
-    vertical-align: middle;
-    display: inline-block;
-  }
+}
+.line {
+  display: table-cell;
+  width: 100%;
+  padding-left: 14px;
+  border: none;
+}
+.line:after {
+  content: '';
+  border-top: 1px solid #000000;
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .about__text {
